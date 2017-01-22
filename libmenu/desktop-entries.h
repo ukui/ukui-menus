@@ -55,7 +55,7 @@ gboolean desktop_entry_get_launch_in_terminal(DesktopEntry* entry);
 
 gboolean desktop_entry_get_hidden(DesktopEntry* entry);
 gboolean desktop_entry_get_no_display(DesktopEntry* entry);
-gboolean desktop_entry_get_show_in_mate(DesktopEntry* entry);
+gboolean desktop_entry_get_show_in_ukui(DesktopEntry* entry);
 gboolean desktop_entry_get_tryexec_failed(DesktopEntry* entry);
 
 gboolean desktop_entry_has_categories(DesktopEntry* entry);

@@ -1,3 +1,29 @@
+ukui-menus (1.16.3) yakkety; urgency=medium
+
+  * rename .po/ mate/Mate/MATE to ukui/Ukui/UKUI
+
+ -- hebing <hebing@kylinos.cn>  Tue, 17 Jan 2017 18:39:01 +0800
+
+ukui-menus (1.16.2) yakkety; urgency=medium
+
+  * rename file from mate to ukui
+
+ -- hebing <hebing@kylinos.cn>  Tue, 17 Jan 2017 17:28:23 +0800
+
+ukui-menus (1.16.1) yakkety; urgency=medium
+
+  * rename mate to ukui
+  * rename Mate to Ukui
+  * rename MATE to UKUI
+
+ -- hebing <hebing@kylinos.cn>  Tue, 17 Jan 2017 14:04:54 +0800
+
+ukui-menus (1.16.0-1) yakkety; urgency=medium
+
+  * fork from mate-menus to ukui-menus
+
+ -- hebing <hebing@kylinos.cn>  Tue, 17 Jan 2017 14:04:54 +0800
+
 mate-menus (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]

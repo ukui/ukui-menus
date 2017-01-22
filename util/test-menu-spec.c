@@ -19,7 +19,7 @@
 
 #include <config.h>
 
-#include "matemenu-tree.h"
+#include "ukuimenu-tree.h"
 
 #include <string.h>
 
@@ -43,9 +43,9 @@ static GOptionEntry options[] = {
 	{NULL}
 };
 
-static void append_directory_path(MateMenuTreeDirectory* directory, GString* path)
+static void append_directory_path(UkuiMenuTreeDirectory* directory, GString* path)
 {
-	MateMenuTreeDirectory* parent = matemenu_tree_item_get_parent(MATEMENU_TREE_ITEM(directory));
+	UkuiMenuTreeDirectory* parent = ukuimenu_tree_item_get_parent(UKUIMENU_TREE_ITEM(directory));
 
 	if (!parent)
 	{
@@ -55,13 +55,13 @@ static void append_directory_path(MateMenuTreeDirectory* directory, GString* pat
 
 	append_directory_path(parent, path);
 
-	g_string_append(path, matemenu_tree_directory_get_name(directory));
+	g_string_append(path, ukuimenu_tree_directory_get_name(directory));
 	g_string_append_c(path, '/');
 
-	matemenu_tree_item_unref(parent);
+	ukuimenu_tree_item_unref(parent);
 }
 
-static char* make_path(MateMenuTreeDirectory* directory)
+static char* make_path(UkuiMenuTreeDirectory* directory)
 {
 	g_return_val_if_fail(directory != NULL, NULL);
 
@@ -72,23 +72,23 @@ static char* make_path(MateMenuTreeDirectory* directory)
 	return g_string_free(path, FALSE);
 }
 
-static void print_entry(MateMenuTreeEntry* entry, const char* path)
+static void print_entry(UkuiMenuTreeEntry* entry, const char* path)
 {
-	char* utf8_path = g_filename_to_utf8(matemenu_tree_entry_get_desktop_file_path(entry), -1, NULL, NULL, NULL);
-	char* utf8_file_id = g_filename_to_utf8(matemenu_tree_entry_get_desktop_file_id(entry), -1, NULL, NULL, NULL);
+	char* utf8_path = g_filename_to_utf8(ukuimenu_tree_entry_get_desktop_file_path(entry), -1, NULL, NULL, NULL);
+	char* utf8_file_id = g_filename_to_utf8(ukuimenu_tree_entry_get_desktop_file_id(entry), -1, NULL, NULL, NULL);
 
 	g_print("%s    %s    %s%s%s\n",
 		path,
 		utf8_file_id ? utf8_file_id : _("Invalid desktop file ID"),
 		utf8_path ? utf8_path : _("[Invalid Filename]"),
-		matemenu_tree_entry_get_is_excluded(entry) ? _(" <excluded>") : "",
-		matemenu_tree_entry_get_is_nodisplay(entry) ? _(" <nodisplay>") : "");
+		ukuimenu_tree_entry_get_is_excluded(entry) ? _(" <excluded>") : "",
+		ukuimenu_tree_entry_get_is_nodisplay(entry) ? _(" <nodisplay>") : "");
 
 	g_free(utf8_file_id);
 	g_free(utf8_path);
 }
 
-static void print_directory(MateMenuTreeDirectory* directory)
+static void print_directory(UkuiMenuTreeDirectory* directory)
 {
 	const char* path;
 	char* freeme = make_path(directory);
@@ -102,34 +102,34 @@ static void print_directory(MateMenuTreeDirectory* directory)
 		path = freeme + 1;
 	}
 
-	GSList* items = matemenu_tree_directory_get_contents(directory);
+	GSList* items = ukuimenu_tree_directory_get_contents(directory);
 	GSList* tmp = items;
 
 	while (tmp != NULL)
 	{
-		MateMenuTreeItem* item = tmp->data;
+		UkuiMenuTreeItem* item = tmp->data;
 
-		switch (matemenu_tree_item_get_type(item))
+		switch (ukuimenu_tree_item_get_type(item))
 		{
-			case MATEMENU_TREE_ITEM_ENTRY:
-				print_entry(MATEMENU_TREE_ENTRY(item), path);
+			case UKUIMENU_TREE_ITEM_ENTRY:
+				print_entry(UKUIMENU_TREE_ENTRY(item), path);
 				break;
 
-			case MATEMENU_TREE_ITEM_DIRECTORY:
-				print_directory(MATEMENU_TREE_DIRECTORY(item));
+			case UKUIMENU_TREE_ITEM_DIRECTORY:
+				print_directory(UKUIMENU_TREE_DIRECTORY(item));
 				break;
 
-			case MATEMENU_TREE_ITEM_HEADER:
-			case MATEMENU_TREE_ITEM_SEPARATOR:
+			case UKUIMENU_TREE_ITEM_HEADER:
+			case UKUIMENU_TREE_ITEM_SEPARATOR:
 				break;
 
-			case MATEMENU_TREE_ITEM_ALIAS:
+			case UKUIMENU_TREE_ITEM_ALIAS:
 				{
-					MateMenuTreeItem* aliased_item = matemenu_tree_alias_get_item(MATEMENU_TREE_ALIAS(item));
+					UkuiMenuTreeItem* aliased_item = ukuimenu_tree_alias_get_item(UKUIMENU_TREE_ALIAS(item));
 
-					if (matemenu_tree_item_get_type(aliased_item) == MATEMENU_TREE_ITEM_ENTRY)
+					if (ukuimenu_tree_item_get_type(aliased_item) == UKUIMENU_TREE_ITEM_ENTRY)
 					{
-						print_entry(MATEMENU_TREE_ENTRY(aliased_item), path);
+						print_entry(UKUIMENU_TREE_ENTRY(aliased_item), path);
 					}
 				}
 				break;
@@ -139,7 +139,7 @@ static void print_directory(MateMenuTreeDirectory* directory)
 				break;
 		}
 
-		matemenu_tree_item_unref(tmp->data);
+		ukuimenu_tree_item_unref(tmp->data);
 
 		tmp = tmp->next;
 	}
@@ -149,11 +149,11 @@ static void print_directory(MateMenuTreeDirectory* directory)
 	g_free(freeme);
 }
 
-static void handle_tree_changed(MateMenuTree* tree)
+static void handle_tree_changed(UkuiMenuTree* tree)
 {
 	g_print(_("\n\n\n==== Menu changed, reloading ====\n\n\n"));
 
-	MateMenuTreeDirectory* root = matemenu_tree_get_root_directory(tree);
+	UkuiMenuTreeDirectory* root = ukuimenu_tree_get_root_directory(tree);
 
 	if (root == NULL)
 	{
@@ -162,46 +162,46 @@ static void handle_tree_changed(MateMenuTree* tree)
 	}
 
 	print_directory(root);
-	matemenu_tree_item_unref(root);
+	ukuimenu_tree_item_unref(root);
 }
 
 int main(int argc, char** argv)
 {
 	#if 0
 	  /* See comment when defining _() at the top of this file. */
-	  bindtextdomain(GETTEXT_PACKAGE, MATELOCALEDIR);
+	  bindtextdomain(GETTEXT_PACKAGE, UKUILOCALEDIR);
 	  bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8");
 	  textdomain(GETTEXT_PACKAGE);
 	#endif
 
-	GOptionContext* options_context = g_option_context_new(_("- test MATE's implementation of the Desktop Menu Specification"));
+	GOptionContext* options_context = g_option_context_new(_("- test UKUI's implementation of the Desktop Menu Specification"));
 	g_option_context_add_main_entries(options_context, options, GETTEXT_PACKAGE);
 	g_option_context_parse(options_context, &argc, &argv, NULL);
 	g_option_context_free(options_context);
 
-	MateMenuTreeFlags flags = MATEMENU_TREE_FLAGS_NONE;
+	UkuiMenuTreeFlags flags = UKUIMENU_TREE_FLAGS_NONE;
 
 	if (include_excluded)
 	{
-		flags |= MATEMENU_TREE_FLAGS_INCLUDE_EXCLUDED;
+		flags |= UKUIMENU_TREE_FLAGS_INCLUDE_EXCLUDED;
 	}
 
 	if (include_nodisplay)
 	{
-		flags |= MATEMENU_TREE_FLAGS_INCLUDE_NODISPLAY;
+		flags |= UKUIMENU_TREE_FLAGS_INCLUDE_NODISPLAY;
 	}
 
 	// Usamos applications.menu is existe. Para compatibilidad con GNOME
-	MateMenuTree* tree = matemenu_tree_lookup(menu_file ? menu_file : "mate-applications.menu", flags);
+	UkuiMenuTree* tree = ukuimenu_tree_lookup(menu_file ? menu_file : "ukui-applications.menu", flags);
 
 	g_assert(tree != NULL);
 
-	MateMenuTreeDirectory* root = matemenu_tree_get_root_directory(tree);
+	UkuiMenuTreeDirectory* root = ukuimenu_tree_get_root_directory(tree);
 
 	if (root != NULL)
 	{
 		print_directory(root);
-		matemenu_tree_item_unref(root);
+		ukuimenu_tree_item_unref(root);
 	}
 	else
 	{
@@ -210,16 +210,16 @@ int main(int argc, char** argv)
 
 	if (monitor)
 	{
-		matemenu_tree_add_monitor(tree, (MateMenuTreeChangedFunc) handle_tree_changed, NULL);
+		ukuimenu_tree_add_monitor(tree, (UkuiMenuTreeChangedFunc) handle_tree_changed, NULL);
 
 		GMainLoop* main_loop = g_main_loop_new(NULL, FALSE);
 		g_main_loop_run(main_loop);
 		g_main_loop_unref(main_loop);
 
-		matemenu_tree_remove_monitor(tree, (MateMenuTreeChangedFunc) handle_tree_changed, NULL);
+		ukuimenu_tree_remove_monitor(tree, (UkuiMenuTreeChangedFunc) handle_tree_changed, NULL);
 	}
 
-	matemenu_tree_unref(tree);
+	ukuimenu_tree_unref(tree);
 
 	return 0;
 }

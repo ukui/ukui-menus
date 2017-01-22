@@ -1,9 +1,9 @@
 menudir = $(sysconfdir)/xdg/menus
 
 menu_DATA = \
-	mate-applications.menu \
-	mate-settings.menu \
-	mate-preferences-categories.menu
+	ukui-applications.menu \
+	ukui-settings.menu \
+	ukui-preferences-categories.menu
 
 EXTRA_DIST= $(menu_DATA)
 

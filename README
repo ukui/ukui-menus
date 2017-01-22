@@ -1,10 +1,10 @@
-mate-menus
+ukui-menus
 ===========
 
-mate-menus contains the libmate-menu library, the layout configuration
-files for the MATE menu, as well as a simple menu editor.
+ukui-menus contains the libukui-menu library, the layout configuration
+files for the UKUI menu, as well as a simple menu editor.
 
-The libmate-menu library implements the "Desktop Menu Specification"
+The libukui-menu library implements the "Desktop Menu Specification"
 from freedesktop.org:
 
   http://freedesktop.org/wiki/Specifications/menu-spec
@@ -12,22 +12,22 @@ from freedesktop.org:
 
 You may download updates to the package from:
 
-   http://pub.mate-desktop.org/
+   http://www.ukui.org/
 
-mate-menus is a fork of gnome-menus.
+ukui-menus is a fork of gnome-menus.
 
 Installation
 ============
 
-If you are not using a released version of mate-menus (for example, if
+If you are not using a released version of ukui-menus (for example, if
 you checked out the code from git), you first need to run './autogen.sh'.
 
 
 How to report bugs
 ==================
 
-Bugs should be reported to the MATE bug tracking system:
+Bugs should be reported to the UKUI bug tracking system:
 
-   https://github.com/mate-desktop/mate-menus/issues
+   https://github.com/ukui/ukui-menus/issues
 
 You will need to create an account for yourself.

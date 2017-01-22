@@ -1,29 +1,29 @@
-directorydir = $(datadir)/mate/desktop-directories
+directorydir = $(datadir)/ukui/desktop-directories
 
-# Should be moved to mate-control-center:
+# Should be moved to ukui-control-center:
 directory_in_controlcenterfiles = \
-	mate-hardware.directory.in \
-	mate-internet-and-network.directory.in \
-	mate-look-and-feel.directory.in \
-	mate-personal.directory.in \
-	mate-system.directory.in
+	ukui-hardware.directory.in \
+	ukui-internet-and-network.directory.in \
+	ukui-look-and-feel.directory.in \
+	ukui-personal.directory.in \
+	ukui-system.directory.in
 
 directory_in_files = \
-	mate-audio-video.directory.in \
-	mate-development.directory.in \
-	mate-education.directory.in \
-	mate-game.directory.in \
-	mate-graphics.directory.in \
-	mate-network.directory.in \
-	mate-office.directory.in \
-	mate-settings.directory.in \
-	mate-settings-system.directory.in \
-	mate-system-tools.directory.in \
-	mate-utility.directory.in \
-	mate-utility-accessibility.directory.in \
-	mate-other.directory.in \
-	mate-menu-applications.directory.in \
-	mate-menu-system.directory.in \
+	ukui-audio-video.directory.in \
+	ukui-development.directory.in \
+	ukui-education.directory.in \
+	ukui-game.directory.in \
+	ukui-graphics.directory.in \
+	ukui-network.directory.in \
+	ukui-office.directory.in \
+	ukui-settings.directory.in \
+	ukui-settings-system.directory.in \
+	ukui-system-tools.directory.in \
+	ukui-utility.directory.in \
+	ukui-utility-accessibility.directory.in \
+	ukui-other.directory.in \
+	ukui-menu-applications.directory.in \
+	ukui-menu-system.directory.in \
 	$(directory_in_controlcenterfiles)
 
 directory_DATA = $(directory_in_files:.directory.in=.directory)

@@ -1,31 +1,34 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-menus
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-menus/
+Upstream-Name: ukui-menus
+Upstream-Contact: Kylin Team <ukui@kylinos.cn>
+Source: http://github.com/ukui/ukui-menus/
 
 Files: libmenu/desktop-entries.c
        libmenu/desktop-entries.h
        libmenu/entry-directories.c
        libmenu/entry-directories.h
-       libmenu/matemenu-tree.c
-       libmenu/matemenu-tree.h
+       libmenu/ukuimenu-tree.c
+       libmenu/ukuimenu-tree.h
        libmenu/menu-layout.c
        libmenu/menu-layout.h
        libmenu/menu-util.c
        libmenu/menu-util.h
-       python/matemenu.c
+       python/ukuimenu.c
        util/test-menu-spec.c
 Copyright: 2002-2005 Red Hat, Inc
+           2016 Tianjin KYLIN Information Technology Co.,Ltd
 License: LGPL-2+
 
 Files: libmenu/canonicalize.c
        libmenu/canonicalize.h
 Copyright: 1996-2002, Free Software Foundation, Inc
            2002, Red Hat, Inc. (trivial port to GLib)
+           2016 Tianjin KYLIN Information Technology Co.,Ltd
 License: LGPL-2.1+
 
-Files: util/mate-menus-ls.py
+Files: util/ukui-menus-ls.py
 Copyright: 2008, Novell, Inc
+           2016 Tianjin KYLIN Information Technology Co.,Ltd
 License: GPL-2+
 
 Files: libmenu/menu-monitor.c
@@ -33,11 +36,13 @@ Copyright: 2005, Red Hat, Inc
            2006, Mark McLoughlin
            2007, Sebastian Dröge
            2008, Vincent Untz
+           2016 Tianjin KYLIN Information Technology Co.,Ltd
 License: LGPL-2+
 
 Files: libmenu/menu-monitor.h
 Copyright: 2005, Red Hat, Inc
            2011, Perberos
+           2016 Tianjin KYLIN Information Technology Co.,Ltd
 License: LGPL-2+
 
 Files: po/*
@@ -247,9 +252,10 @@ Copyright:
  2005-2007, Clytie Siddall <clytie@riverland.net.au>
  2004, Funda Wang <fundawang@linux.net.cn>
  2005-2007, Woodman Tuen <wmtuen@gmail.com>
+ 2016 Tianjin KYLIN Information Technology Co.,Ltd
 License: GPL-2+ or LGPL-2+ or LGPL-2.1+
 Comment:
- Same license(s) as the mate-menus package.
+ Same license(s) as the ukui-menus package.
 
 Files: autogen.sh
        .tx/config
@@ -265,8 +271,8 @@ Files: autogen.sh
        desktop-directories/*
        layout/*
        libmenu/Makefile.am
-       libmenu/libmate-menu.pc.in
-       libmenu/libmate-menu-uninstalled.pc.in
+       libmenu/libukui-menu.pc.in
+       libmenu/libukui-menu-uninstalled.pc.in
        python/Makefile.am
        util/Makefile.am
 Copyright: *No copyright*
@@ -278,6 +284,7 @@ Comment:
 Files: debian/*
 Copyright: 2011-2014 Stefano Karapetsas <stefano@karapetsas.com>
            2013-2014 Mike Gabriel <sunweaver@debian.org>
+           2016 Tianjin KYLIN Information Technology Co.,Ltd
 License: GPL-2+ or LGPL-2+
 
 License: GPL-2+

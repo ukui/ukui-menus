@@ -1,7 +1,7 @@
 AC_PREREQ(2.62)
 
-AC_INIT([mate-menus], [1.16.0], [http://www.mate-desktop.org])
-AC_CONFIG_SRCDIR(libmenu/matemenu-tree.h)
+AC_INIT([ukui-menus], [1.16.0], [http://www.ukui.org])
+AC_CONFIG_SRCDIR(libmenu/ukuimenu-tree.h)
 
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz check-news])
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
@@ -9,7 +9,7 @@ AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_HEADERS(config.h)
 
 AM_MAINTAINER_MODE
-MATE_MAINTAINER_MODE_DEFINES
+UKUI_MAINTAINER_MODE_DEFINES
 
 # Before making a release, the LT_VERSION string should be modified.
 # The string is of the form C:R:A.
@@ -22,7 +22,7 @@ MATE_MAINTAINER_MODE_DEFINES
 LIB_MENU_LT_VERSION=6:9:4
 AC_SUBST(LIB_MENU_LT_VERSION)
 
-GETTEXT_PACKAGE=mate-menus
+GETTEXT_PACKAGE=ukui-menus
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Name of default gettext domain])
 AC_SUBST(GETTEXT_PACKAGE)
 
@@ -39,7 +39,7 @@ PKG_CHECK_MODULES(GLIB, glib-2.0 >= 2.36.0 gio-2.0 >= 2.15.2)
 AC_SUBST(GLIB_CFLAGS)
 AC_SUBST(GLIB_LIBS)
 
-MATE_COMPILE_WARNINGS(yes)
+UKUI_COMPILE_WARNINGS(yes)
 
 AC_ARG_ENABLE(deprecation_flags,
               [AC_HELP_STRING([--enable-deprecation-flags],
@@ -93,8 +93,8 @@ GOBJECT_INTROSPECTION_CHECK([0.6.7])
 AC_OUTPUT([
 Makefile
 libmenu/Makefile
-libmenu/libmate-menu.pc
-libmenu/libmate-menu-uninstalled.pc
+libmenu/libukui-menu.pc
+libmenu/libukui-menu-uninstalled.pc
 layout/Makefile
 desktop-directories/Makefile
 util/Makefile
@@ -107,8 +107,8 @@ dnl - Show summary
 dnl ---------------------------------------------------------------------------
 
 echo "
-              mate-menus $VERSION
-              `echo mate-menus $VERSION | sed "s/./=/g"`
+              ukui-menus $VERSION
+              `echo ukui-menus $VERSION | sed "s/./=/g"`
 
         prefix:                       ${prefix}
         exec_prefix:                  ${exec_prefix}

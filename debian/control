@@ -1,11 +1,8 @@
-Source: mate-menus
+Source: ukui-menus
 Section: libs
 Priority: optional
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
-           Stefano Karapetsas <stefano@karapetsas.com>,
-           Mike Gabriel <sunweaver@debian.org>,
-           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Maintainer: Kylin Team <ukui@kylinos.cn>
+Uploaders: Hebing <hebing@kylinos.cn> 
 Build-Depends: debhelper (>= 9),
                dh-python,
                dpkg-dev (>= 1.16.1.1),
@@ -13,40 +10,38 @@ Build-Depends: debhelper (>= 9),
                intltool,
                libgirepository1.0-dev,
                libglib2.0-dev,
-               mate-common (>= 1.16),
+               ukui-common (>= 1.16),
                python-all-dev (>= 2.7),
 Standards-Version: 3.9.8
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://anonscm.debian.org/git/pkg-mate/mate-menus.git
-Vcs-Git: https://anonscm.debian.org/git/pkg-mate/mate-menus.git
+Homepage: http://www.ukui.org/
 X-Python-Version: >= 2.7
 
-Package: mate-menus
+Package: ukui-menus
 Architecture: any
-Depends: python-mate-menu (= ${binary:Version}),
+Depends: python-ukui-menu (= ${binary:Version}),
          ${misc:Depends},
          ${python:Depends},
 Breaks: mate-control-center (<< 1.13.0),
-Description: implementation of the freedesktop menu specification for MATE
+Description: implementation of the freedesktop menu specification for UKUI
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
  .
  http://www.freedesktop.org/Standards/menu-spec
  .
- Also contained here are the MATE menu layout configuration files, .directory
+ Also contained here are the UKUI menu layout configuration files, .directory
  files and assorted menu related utility programs.
 
-Package: libmate-menu2
+Package: libukui-menu2
 Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-Breaks: libmatemenu,
-        mate-menus (<= 1.0.2-1),
-Replaces: libmatemenu,
-          mate-menus (<= 1.0.2-1),
-Provides: libmatemenu,
-Description: implementation of the freedesktop menu specification for MATE (library)
+Breaks: libukuimenu,
+        ukui-menus (<= 1.0.2-1),
+Replaces: libukuimenu,
+          ukui-menus (<= 1.0.2-1),
+Provides: libukuimenu,
+Description: implementation of the freedesktop menu specification for UKUI (library)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
  .
@@ -54,18 +49,18 @@ Description: implementation of the freedesktop menu specification for MATE (libr
  .
  This package contains the actual library files.
 
-Package: libmate-menu-dev
+Package: libukui-menu-dev
 Architecture: any
 Multi-Arch: same
 Section: libdevel
 Depends: libglib2.0-dev,
-         libmate-menu2 (= ${binary:Version}),
+         libukui-menu2 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: libmatemenu-dev,
-Replaces: libmatemenu-dev,
-Provides: libmatemenu-dev,
-Description: implementation of the freedesktop menu specification for MATE (development files)
+Breaks: libukuimenu-dev,
+Replaces: libukuimenu-dev,
+Provides: libukuimenu-dev,
+Description: implementation of the freedesktop menu specification for UKUI (development files)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
  .
@@ -73,27 +68,27 @@ Description: implementation of the freedesktop menu specification for MATE (deve
  .
  This package contains the development files.
 
-Package: gir1.2-mate-menu
+Package: gir1.2-ukui-menu
 Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
-Description: GObject introspection data for the MATE menu specification
- This package contains introspection data for MATE menu specification, an
+Description: GObject introspection data for the UKUI menu specification
+ This package contains introspection data for UKUI menu specification, an
  an implementation of the draft "Desktop Menu Specification" from
  freedesktop.org
  .
  It can be used by packages using the GIRepository format to generate dynamic
  bindings.
 
-Package: python-mate-menu
+Package: python-ukui-menu
 Section: python
 Architecture: any
 Depends: ${misc:Depends},
          ${python:Depends},
          ${shlibs:Depends},
-Description: implementation of the freedesktop menu specification for MATE (Python bindings)
+Description: implementation of the freedesktop menu specification for UKUI (Python bindings)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org.
  .

@@ -1,14 +1,14 @@
 ========== af.po ==========
-# Afrikaans translation of mate-menus
-# This file is distributed under the same license as the mate-menus package.
+# Afrikaans translation of ukui-menus
+# This file is distributed under the same license as the ukui-menus package.
 # F Wolff <friedel@translate.org.za>, 2008
 
 
 
 
 ========== an.po ==========
-# Aragonese translations mate-menus.
-# Copyright (C) 2010 Mate Foundation
+# Aragonese translations ukui-menus.
+# Copyright (C) 2010 Ukui Foundation
 # This file is distributed under the same license as the PACKAGE package.
 # Daniel Martinez <entaltoaragon@gmail.com>, 2010.
 #
@@ -17,7 +17,7 @@
 
 
 ========== ar.po ==========
-# translation of mate-menus.HEAD.po to Arabic
+# translation of ukui-menus.HEAD.po to Arabic
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER, 2005.
 # Djihed Afifi <djihed@gmail.com>, 2006.
@@ -38,10 +38,10 @@
 
 
 ========== ast.po ==========
-# translation of mate-menus.po to Asturian
-# Asturian translation for mate-menus
+# translation of ukui-menus.po to Asturian
+# Asturian translation for ukui-menus
 # Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 #
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2007.
 # Xose S. Puente <xspuente@gmail.com>, 2007.
@@ -50,9 +50,9 @@
 
 
 ========== be.po ==========
-# Беларускі пераклад mate-menus.
-# Copyright (C) 2005 THE mate-menus'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the mate-menus package.
+# Беларускі пераклад ukui-menus.
+# Copyright (C) 2005 THE ukui-menus'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ukui-menus package.
 # Ales Nyakhaychyk <nab@mail.by>, 2005, 2007
 # Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2006.
 #
@@ -61,9 +61,9 @@
 
 
 ========== be@latin.po ==========
-# Biełaruski pierakład mate-menus.
-# Copyright (C) 2005 THE mate-menus'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the mate-menus package.
+# Biełaruski pierakład ukui-menus.
+# Copyright (C) 2005 THE ukui-menus'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ukui-menus package.
 # Alaksandar Navicki <zolak@lacinka.org>, 2006.
 #
 
@@ -71,9 +71,9 @@
 
 
 ========== bg.po ==========
-# Bulgarian translation of mate-menus po-file.
+# Bulgarian translation of ukui-menus po-file.
 # Copyright (C) 2004, 2005, 2007, 2008, 2009 Free Software Foundation
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Vladimir "Kaladan" Petkov <vpetkov@i-space.org>, 2004, 2005, 2007.
 # Rostislav "zbrox" Raykov <zbrox@i-space.org>, 2005.
 # Alexander Shopov <ash@contact.bg>, 2008, 2009.
@@ -83,7 +83,7 @@
 
 
 ========== bn.po ==========
-# Bengali translation of mate-menus
+# Bengali translation of ukui-menus
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Mahay Alam Khan <makl10n@yahoo.com>, 2005.
@@ -96,7 +96,7 @@
 
 ========== bn_IN.po ==========
 # translation of bn_IN.po to Bengali INDIA
-# Bengali India  translation of mate-menus
+# Bengali India  translation of ukui-menus
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
@@ -108,9 +108,9 @@
 
 
 ========== br.po ==========
-# Breton translation of mate-menus.
+# Breton translation of ukui-menus.
 # Copyright (C) 2004-2005 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menu package.
+# This file is distributed under the same license as the ukui-menu package.
 #
 # Jérémy Ar Floc'h <jeremy.lefloch@gmail.com>, 2006.
 #
@@ -119,9 +119,9 @@
 
 
 ========== ca.po ==========
-# Catalan translation of MATE Menus.
+# Catalan translation of UKUI Menus.
 # Copyright © 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Jordi Mallach <jordi@sindominio.net>, 2004, 2005, 2006, 2007.
 # Gil Forcada <gilforcada@guifi.net>, 2008, 2009.
 #
@@ -130,9 +130,9 @@
 
 
 ========== ca@valencia.po ==========
-# Catalan translation of MATE Menus.
+# Catalan translation of UKUI Menus.
 # Copyright © 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Jordi Mallach <jordi@sindominio.net>, 2004, 2005, 2006, 2007.
 # Gil Forcada <gilforcada@guifi.net>, 2008, 2009.
 #
@@ -141,8 +141,8 @@
 
 
 ========== crh.po ==========
-# translation of mate-menus to Qırımtatarca
-# This file is distributed under the same license as the mate-menus package.
+# translation of ukui-menus to Qırımtatarca
+# This file is distributed under the same license as the ukui-menus package.
 #
 # Reşat SABIQ <tilde.birlik@gmail.com>, 2009, 2010.
 
@@ -150,10 +150,10 @@
 
 
 ========== cs.po ==========
-# Czech translation of mate-menus.
-# Copyright (C) 2004, 2005, 2007, 2008, 2009 the author(s) of mate-menus.
+# Czech translation of ukui-menus.
+# Copyright (C) 2004, 2005, 2007, 2008, 2009 the author(s) of ukui-menus.
 # Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Miloslav Trmac <mitr@volny.cz>, 2004, 2005.
 # Petr Tomeš <ptomes@gmail.com>, 2006.
 # Jakub Friedl <jfriedl@suse.cz>, 2007.
@@ -163,9 +163,9 @@
 
 
 ========== cy.po ==========
-# MATE Menus in Welsh.
+# UKUI Menus in Welsh.
 #
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Dafydd Harries <daf@muse.19inch.net>, 2005.
 #
 
@@ -173,9 +173,9 @@
 
 
 ========== da.po ==========
-# Danish translation of mate-menus.
+# Danish translation of ukui-menus.
 # Copyright (C) 2007 Mark McLoughlin
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # David Nielsen <dnielsen@breakmygentoo.net>, 2004.
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2005.
 # Ole Laursen <olau@hardworking.dk>, 2006.
@@ -186,10 +186,10 @@
 
 
 ========== de.po ==========
-# German translation of mate-menus.
-# Copyright (C) 2004 THE mate-menus'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the mate-menus package.
-# Hendrik Brandt <heb@mate-de.org>, 2004-2005.
+# German translation of ukui-menus.
+# Copyright (C) 2004 THE ukui-menus'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ukui-menus package.
+# Hendrik Brandt <heb@ukui-de.org>, 2004-2005.
 # Hendrik Richter <hendrikr@gnome.org>, 2006, 2007.
 # Mario Blättermann <mariobl@gnome.org>, 2009.
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2010.
@@ -198,9 +198,9 @@
 
 
 ========== dv.po ==========
-# Divehi translation for mate-menus
+# Divehi translation for ukui-menus
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
 #
 
@@ -208,7 +208,7 @@
 
 
 ========== dz.po ==========
-# Dzongkha translation of mate-menus
+# Dzongkha translation of ukui-menus
 # Copyright @ 2006 Free Software Foundation, Inc.
 # Mindu Dorji
 #
@@ -217,8 +217,8 @@
 
 
 ========== el.po ==========
-# Translation of mate-menus to Greek
-# This file is distributed under the same license as the mate-menus package.
+# Translation of ukui-menus to Greek
+# This file is distributed under the same license as the ukui-menus package.
 # Copyright (C) Free Software Foundation.
 #
 # Simos Xenitellis <simos@gnome.org>, 2004.
@@ -229,9 +229,9 @@
 
 
 ========== en@shaw.po ==========
-# mate-menus Shavian translation.
+# ukui-menus Shavian translation.
 # Copyright (C) 2009
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Thomas Thurman <tthurman@gnome.org>, 2009
 #
 
@@ -239,9 +239,9 @@
 
 
 ========== en_CA.po ==========
-# Canadian English translation for mate-menus
-# Copyright (C) 2004-2005 Adam Weinberger and the MATE Foundation
-# This file is distributed under the same licence as the mate-menus package.
+# Canadian English translation for ukui-menus
+# Copyright (C) 2004-2005 Adam Weinberger and the UKUI Foundation
+# This file is distributed under the same licence as the ukui-menus package.
 # Adam Weinberger <adamw@gnome.org>, 2004, 2005.
 #
 #
@@ -250,9 +250,9 @@
 
 
 ========== en_GB.po ==========
-# English (British) translation for mate-menus
-# Copyright (C) 2005 The Mate Foundation
-# This file is distributed under the same license as the mate-menus package.
+# English (British) translation for ukui-menus
+# Copyright (C) 2005 The Ukui Foundation
+# This file is distributed under the same license as the ukui-menus package.
 # David Lodge <dave@cirt.net>, 2005.
 # Philip Withnall <philip@tecnocode.co.uk>, 2009.
 
@@ -260,9 +260,9 @@
 
 
 ========== eo.po ==========
-# Esperanto translation for mate-menus
+# Esperanto translation for ukui-menus
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 #
 # Joop EGGEN <joop_eggen@yahoo.de>, 2006
 # Guillaume SAVATON <llumeao@tuxfamily.org>, 2006
@@ -273,9 +273,9 @@
 
 
 ========== es.po ==========
-# translation of mate-menus to spanish
+# translation of ukui-menus to spanish
 # This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) 2005 Mate Foundation, 2005.
+# Copyright (C) 2005 Ukui Foundation, 2005.
 #
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
 # Claudio Saavedra <csaavedra@alumnos.utalca.cl>, 2007.
@@ -285,12 +285,12 @@
 
 
 ========== et.po ==========
-# MATE menüüde eesti keele tõlge
-# Estonian translation of Mate-menus
+# UKUI menüüde eesti keele tõlge
+# Estonian translation of Ukui-menus
 #
 # Copyright (C) 2005 Free Software Foundation, Inc.
-# Copyright (C) 2007 The MATE Project
-# This file is distributed under the same license as the Mate-menus package.
+# Copyright (C) 2007 The UKUI Project
+# This file is distributed under the same license as the Ukui-menus package.
 #
 # Priit Laes <amd@store20.com>, 2005.
 # Ivar Smolin <okul@linux.ee>, 2005, 2007.
@@ -301,7 +301,7 @@
 
 ========== eu.po ==========
 # translation of eu.po to Basque
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 #
 # Mikel Olasagasti <hey_neken@mundurat.net>, 2004, 2005.
 # Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2005, 2007, 2008, 2009, 2010.
@@ -311,9 +311,9 @@
 
 
 ========== fa.po ==========
-# Persian translation of mate-menus.
+# Persian translation of ukui-menus.
 # Copyright (C) 2005 Sharif FarsiWeb, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Farzaneh Sarafraz <farzaneh@farsiweb.info>, 2005.
 # Meelad Zakaria <meelad@farsiweb.info>, 2005.
 # Roozbeh Pournader <roozbeh@gmail.com>, 2005, 2008.
@@ -325,7 +325,7 @@
 
 
 ========== fi.po ==========
-# Finnish messages for mate-menus
+# Finnish messages for ukui-menus
 # Copyright (C) 2004-2005 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gail package.
 # Tommi Vainikainen <Tommi.Vainikainen@iki.fi>, 2004-2005.
@@ -336,9 +336,9 @@
 
 
 ========== fr.po ==========
-# French translation of mate-menus.
+# French translation of ukui-menus.
 # Copyright (C) 2004-2009 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menu package.
+# This file is distributed under the same license as the ukui-menu package.
 #
 # Baptiste Mille-Mathias <bmm80@free.fr>, 2004-2005.
 # Vincent Untz <vuntz@gnome.org>, 2005.
@@ -351,7 +351,7 @@
 
 
 ========== fur.po ==========
-# Friulian translation of mate-menus.
+# Friulian translation of ukui-menus.
 # Copyright (C) 2007 Free Software Foundation, Inc.
 # Massimo Furlani <massimo.furlani@libero.it>, 2007.
 #
@@ -360,9 +360,9 @@
 
 
 ========== fy.po ==========
-# Frisian translation for mate-menus
+# Frisian translation for ukui-menus
 #
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Dooitze de Jong <dooitzedejong@gmail.com>, 2009-2010.
 # Jaap Haitsma <jaap@haitsma.org>, 2007.
 # Peter Hoogsteen <p.hoogsteen@chello.nl >, 2008.
@@ -374,9 +374,9 @@
 
 
 ========== ga.po ==========
-# Irish translations for mate-menus package.
+# Irish translations for ukui-menus package.
 # Copyright (C) 2007-2008 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Seán de Búrca <leftmostcat@gmail.com>, 2007-2009.
 #
 
@@ -401,16 +401,16 @@
 
 
 ========== gn.po ==========
-# Brazilian Guarani translation of mate-menus.
+# Brazilian Guarani translation of ukui-menus.
 # Copyright (C) 2006 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 #
 
 
 
 
 ========== gu.po ==========
-# translation of mate-menus.master.gu.po to Gujarati
+# translation of ukui-menus.master.gu.po to Gujarati
 # Ankit Patel <ankit644@yahoo.com>, 2007.
 # Ankit Patel <ankit@redhat.com>, 2007.
 # Sweta Kothari <swkothar@redhat.com>, 2009.
@@ -419,9 +419,9 @@
 
 
 ========== gv.po ==========
-# Manx translation for mate-menus
+# Manx translation for ukui-menus
 # Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
 #
 
@@ -434,7 +434,7 @@
 
 
 ========== he.po ==========
-# translation of mate-menus.mate-2-10.po to Hebrew
+# translation of ukui-menus.ukui-2-10.po to Hebrew
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Yuval Tanny <tanai@int.gov.il>, 2005.
@@ -444,7 +444,7 @@
 
 
 ========== hi.po ==========
-# translation of mate-menus.master.po to Hindi
+# translation of ukui-menus.master.po to Hindi
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
@@ -456,9 +456,9 @@
 
 
 ========== hr.po ==========
-# Croatian translation for mate-menus
+# Croatian translation for ukui-menus
 # Copyright (c) (c) 2005 Canonical Ltd, and Rosetta Contributors 2005
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2005.
 # Translators: Krešo Kunjas <kkunjas@gmail.com>
 #
@@ -467,18 +467,18 @@
 
 
 ========== hu.po ==========
-# Hungarian translation of mate-menus.
+# Hungarian translation of ukui-menus.
 # Copyright (C) 2004, 2005, 2007, 2008, 2009 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 #
-# Gabor Kelemen <kelemeng at mate dot hu>, 2004, 2005, 2006, 2007, 2008, 2009.
-# Laszlo Dvornik <dvornik at mate dot hu>, 2005.
+# Gabor Kelemen <kelemeng at ukui dot hu>, 2004, 2005, 2006, 2007, 2008, 2009.
+# Laszlo Dvornik <dvornik at ukui dot hu>, 2005.
 
 
 
 
 ========== hy.po ==========
-# translation of mate-menus.HEAD.po to armenian
+# translation of ukui-menus.HEAD.po to armenian
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2005.
 # Ruzanna Khachatryan <ruzannak@hotmail.com>
@@ -488,10 +488,10 @@
 
 
 ========== id.po ==========
-# translation of mate-menus.master.id.po to MATE Indonesian Translation Team
-# Indonesian translation of mate-menus.
-# Copyright (C) 2005 THE mate-menus's COPYRIGHT HOLDER
-# This file is distributed under the same license as the mate-menus package.
+# translation of ukui-menus.master.id.po to UKUI Indonesian Translation Team
+# Indonesian translation of ukui-menus.
+# Copyright (C) 2005 THE ukui-menus's COPYRIGHT HOLDER
+# This file is distributed under the same license as the ukui-menus package.
 #
 #
 # ahmad riza h nst <ari@160c.afraid.org>, 2005.
@@ -507,9 +507,9 @@
 
 
 ========== io.po ==========
-# Ido translation of mate-menus.
+# Ido translation of ukui-menus.
 # Copyright (C) 2007 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Michael Terry <mike@mterry.name>, 2007.
 #
 
@@ -517,8 +517,8 @@
 
 
 ========== is.po ==========
-# Icelandic translation of Mate.
-# Icelandic translation of mate-menus.
+# Icelandic translation of Ukui.
+# Icelandic translation of ukui-menus.
 # Copyright (C) 2008 Free Software Foundation, Inc.
 # Anna Jonna Ármannsdóttir <annajonna@gmail.com>, 2008.
 # Sveinn í Felli <sveinki@nett.is>, 2009.
@@ -528,9 +528,9 @@
 
 
 ========== it.po ==========
-# Italian translation of mate-menus.
+# Italian translation of ukui-menus.
 # Copyright (C) 2005, 2006, 2007, 2008, 2009 The Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Francesco Marletta <francesco.marletta @ tiscali.it>, 2005, 206, 2007, 2008, 2009.
 # Luca Ferretti <elle.uca@libero.it>, 2009
 
@@ -538,10 +538,10 @@
 
 
 ========== ja.po ==========
-# ja.po for mate-menus.
-# Copyright (C) 2004-2007,2009-2010 THE mate-menus' COPYRIGHT HOLDER
-# This file is distributed under the same license as the mate-menus package.
-# Satoru SATOH <ss@mate.gr.jp>, 2004.
+# ja.po for ukui-menus.
+# Copyright (C) 2004-2007,2009-2010 THE ukui-menus' COPYRIGHT HOLDER
+# This file is distributed under the same license as the ukui-menus package.
+# Satoru SATOH <ss@ukui.gr.jp>, 2004.
 # Takeshi AIHANA <takeshi.aihana@gmail.com>, 2005-2007.
 # Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009-2010.
 #
@@ -550,9 +550,9 @@
 
 
 ========== ka.po ==========
-# Georgian translation for mate-menus
+# Georgian translation for ukui-menus
 # Copyright (c) (c) 2005 Canonical Ltd, and Rosetta Contributors 2005
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # <>, 2005.
 # , fuzzy
 #  <>, 2006.
@@ -563,7 +563,7 @@
 
 
 ========== kk.po ==========
-# translation of mate-menus to Kazakh
+# translation of ukui-menus to Kazakh
 # Copyright (C) 2008 Free Software Foundation, Inc.
 #
 # Moldabekov Margulan <moldabekov@gmail.com>, 2008
@@ -574,7 +574,7 @@
 
 
 ========== kn.po ==========
-# translation of mate-menus.master.kn.po to Kannada
+# translation of ukui-menus.master.kn.po to Kannada
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
@@ -584,8 +584,8 @@
 
 
 ========== ko.po ==========
-# mate-menus Korean message translation
-# This file is distributed under the same license as the mate-menus package.
+# ukui-menus Korean message translation
+# This file is distributed under the same license as the ukui-menus package.
 #
 # Sung-Hyun Nam <namsh@kldp.org>, 2000.
 # Young-Ho Cha <ganadist@chollian.net>, 2000,2001,2003, 2007.
@@ -598,10 +598,10 @@
 
 ========== ku.po ==========
 # translation of ku.po to Kurdish
-# translation of mate-menus.HEAD.po to Kurdish
-# Kurdish translation for mate-menus
+# translation of ukui-menus.HEAD.po to Kurdish
+# Kurdish translation for ukui-menus
 # Copyright (c) (c) 2005 Canonical Ltd, and Rosetta Contributors 2005
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Erdal Ronahi <erdal.ronahi@gmail.com>, 2005.
 # Erdal Ronahi <erdal.ronahi@gmail.com>, 2005.
 # Erdal Ronahi <erdal.ronahi@gmail.com, pckurd@hotmail.com>, 2005, 2006.
@@ -611,7 +611,7 @@
 
 
 ========== ky.po ==========
-# Translation of mate-menus to Kirghiz
+# Translation of ukui-menus to Kirghiz
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) 2003,2004, 2005 Free Software Foundation, Inc.
 # Timur Jamakeev <ztimur@gmail.com>, 2005.
@@ -622,9 +622,9 @@
 
 ========== lt.po ==========
 # translation of lt.po to Lithuanian
-# Lithuanian translation of mate-menus.
+# Lithuanian translation of ukui-menus.
 # Copyright (C) 2004-2007, 2008 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 #
 # I'm a rolling thunder, a pouring rain
 # I'm comin' on like a hurricane
@@ -648,8 +648,8 @@
 
 
 ========== mai.po ==========
-# translation of mate-menus.master.mai.po to Hindi
-# translation of mate-menus.HEAD.po to
+# translation of ukui-menus.master.mai.po to Hindi
+# translation of ukui-menus.HEAD.po to
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
@@ -660,9 +660,9 @@
 
 
 ========== mg.po ==========
-# Malagasy translation of mate-menus.
-# Copyright (C) 2006 THE mate-menus'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the mate-menus package.
+# Malagasy translation of ukui-menus.
+# Copyright (C) 2006 THE ukui-menus'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ukui-menus package.
 # Fano Rajaonarisoa <dikatenyfano@gmail.com>, 2006.
 # Thierry Randrianiriana <randrianiriana@gmail.com, 2006.
 #
@@ -672,10 +672,10 @@
 
 
 ========== mk.po ==========
-# translation of mate-menus.HEAD.po to Macedonian
-# translation of mate-menus.
-# Copyright (C) 2005 THE mate-menus'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the mate-menus package.
+# translation of ukui-menus.HEAD.po to Macedonian
+# translation of ukui-menus.
+# Copyright (C) 2005 THE ukui-menus'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ukui-menus package.
 #
 # <>, 2005.
 # Арангел Ангов <ufo@linux.net.mk>, 2005.
@@ -687,9 +687,9 @@
 
 
 ========== ml.po ==========
-# translation of mate-menus.master.ml.po to
-# This file is distributed under the same license as the mate-menus package.
-# Copyright (C) 2007-2008 mate-menus' COPYRIGHT HOLDER.
+# translation of ukui-menus.master.ml.po to
+# This file is distributed under the same license as the ukui-menus package.
+# Copyright (C) 2007-2008 ukui-menus' COPYRIGHT HOLDER.
 # Ani Peter <peter.ani@gmail.com>, 2006.
 # Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>, 2007,2008.
 # Ani Peter <apeter@redhat.com>, 2007.
@@ -712,9 +712,9 @@
 
 ========== mr.po ==========
 # translation of mr.po to Marathi
-# Marathi Translation of mate-menus
+# Marathi Translation of ukui-menus
 # Copyright (C) 2005, 2006, 2008, 2009 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 #
 # FIRST AUTHOR: Gayatri Deshpande <gafinde@gmail.com>, 2005.
 # Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
@@ -725,7 +725,7 @@
 
 
 ========== ms.po ==========
-# mate-menu Bahasa Melayu (ms)
+# ukui-menu Bahasa Melayu (ms)
 #
 # Hasbullah Bin Pit (sebol) <sebol@my-penguin.org>, 2004
 #
@@ -734,9 +734,9 @@
 
 
 ========== nb.po ==========
-# Norwegian bokmål translation of mate-menus.
+# Norwegian bokmål translation of ukui-menus.
 # Copyright (C) 2004, 2005 Red Hat, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Kjartan Maraas <kmaraas@gnome.org>, 2004-2008.
 # Terance Edward Sola <terance@lyse.net>, 2005.
 #
@@ -745,9 +745,9 @@
 
 
 ========== nds.po ==========
-# German, Low translation for mate-menus
+# German, Low translation for ukui-menus
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Nils-Christoph Fiedler <linux@medienkompanie.de>, 2009.
 #
 
@@ -755,7 +755,7 @@
 
 
 ========== ne.po ==========
-# translation of mate-menus.HEAD.ne.po to Nepali
+# translation of ukui-menus.HEAD.ne.po to Nepali
 # Nepali Translation Project.
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
@@ -768,9 +768,9 @@
 
 
 ========== nl.po ==========
-# Dutch translation of mate-menus
+# Dutch translation of ukui-menus
 #
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 #
 # Daniel van Eeden <daniel_e@dds.nl>, 2004
 # Tino Meinen <a.t.meinen@chello.nl>, 2005
@@ -782,7 +782,7 @@
 
 ========== nn.po ==========
 # translation of nn.po to Norwegian Nynorsk
-# Norwegian (nynorsk) translation of mate-menus.
+# Norwegian (nynorsk) translation of ukui-menus.
 # Copyright (C) Roy-Magne Mo <rmo@sunnmore.net>, 2001.
 # Roy-Magne Mo <rmo@sunnmore.net>, 2001.
 # Åsmund Skjæveland <aasmunds@fys.uio.no>, 2003, 2004.
@@ -796,9 +796,9 @@
 
 ========== oc.po ==========
 # Translation of oc.po to Occitan
-# Occitan translation of mate-menus.
+# Occitan translation of ukui-menus.
 # Copyright (C) 2007 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 #
 # Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007.
 
@@ -806,7 +806,7 @@
 
 
 ========== or.po ==========
-# translation of mate-menus.master.or.po to Oriya
+# translation of ukui-menus.master.or.po to Oriya
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
@@ -818,7 +818,7 @@
 
 
 ========== pa.po ==========
-# translation of mate-menus.HEAD.po to Punjabi
+# translation of ukui-menus.HEAD.po to Punjabi
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
@@ -834,7 +834,7 @@
 # Aviary.pl
 # Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
-# matepl@aviary.pl
+# ukuipl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 
@@ -851,9 +851,9 @@
 
 
 ========== pt.po ==========
-# mate-menus' Portuguese translation.
-# Copyright © 2004, 2005, 2006, 2007, 2009 mate-menus
-# This file is distributed under the same license as the mate-menus package.
+# ukui-menus' Portuguese translation.
+# Copyright © 2004, 2005, 2006, 2007, 2009 ukui-menus
+# This file is distributed under the same license as the ukui-menus package.
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2004, 2005, 2006, 2007, 2009.
 #
 
@@ -861,9 +861,9 @@
 
 
 ========== pt_BR.po ==========
-# Brazilian Portuguese translation of MATE Menus.
-# Copyright (C) 2004-2008 the MATE Menu authors.
-# This file is distributed under the same license as the mate-menus package.
+# Brazilian Portuguese translation of UKUI Menus.
+# Copyright (C) 2004-2008 the UKUI Menu authors.
+# This file is distributed under the same license as the ukui-menus package.
 # Raphael Higino <In Memoriam>, 2004-2005.
 # Afonso Celso Medina <afmedina@uol.com.br>, 2005.
 # Og Maciel <ogmaciel@ubuntu.com>, 2006-2007.
@@ -876,10 +876,10 @@
 
 
 ========== ro.po ==========
-# Romanian translation of mate-menus.
+# Romanian translation of ukui-menus.
 # Copyright (C) 2005-2008 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menus package.
-# Dan Damian <dand@mate.ro>, 2005.
+# This file is distributed under the same license as the ukui-menus package.
+# Dan Damian <dand@ukui.ro>, 2005.
 # Alexandru Szasz <alexxed@gmail.com>, 2007.
 # Adi Roiban <adi@roiban.ro>, 2008.
 #
@@ -888,7 +888,7 @@
 
 
 ========== ru.po ==========
-# translation of mate-menus to Russian
+# translation of ukui-menus to Russian
 # Copyright (C) 1998-2003, 2005, 2006, 2007 Free Software Foundation, Inc.
 #
 # Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2004.
@@ -898,9 +898,9 @@
 
 
 ========== rw.po ==========
-# translation of mate-menus to Kinyarwanda.
+# translation of ukui-menus to Kinyarwanda.
 # Copyright (C) 2005 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Steve Murphy <murf@e-tools.com>, 2005
 # Steve performed initial rough translation from compendium built from translations provided by the following translators:
 # Philibert Ndandali  <ndandali@yahoo.fr>, 2005.
@@ -916,7 +916,7 @@
 
 
 ========== si.po ==========
-# translation of mate-menus.po to Sinhala
+# translation of ukui-menus.po to Sinhala
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
@@ -926,9 +926,9 @@
 
 
 ========== sk.po ==========
-# Slovak translation for mate-menus.
+# Slovak translation for ukui-menus.
 # Copyright (C) 2004, 2005, 2007, 2010 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Marcel Telka <marcel@telka.sk>, 2004, 2005.
 # Peter Tuharsky <tuharsky@misbb.sk>, 2007.
 # Pavol Klačanský <pavol@klacansky.com>, 2010.
@@ -938,21 +938,21 @@
 
 
 ========== sl.po ==========
-# Slovenian translation for mate-menues.
+# Slovenian translation for ukui-menues.
 # Copyright (C) 2005-2007 Free Software Foundation, Inc.
 # This file is distributed under the same license as the program package.
 #
 # Matic Žgur <mr.zgur@gmail.com>, 2006.
-# Matej Urbančič <mateju@svn.gnome.org>, 2005 - 2010.
+# Matej Urbančič <ukuiju@svn.gnome.org>, 2005 - 2010.
 #
 
 
 
 
 ========== sq.po ==========
-# Përkthimi i mesazheve të mate-menus në shqip
-# Copyright (C) 2005 THE mate-menus'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the mate-menus package.
+# Përkthimi i mesazheve të ukui-menus në shqip
+# Copyright (C) 2005 THE ukui-menus'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ukui-menus package.
 # Elian Myftiu <elian@alblinux.net>, 2005-2007.
 # Laurent Dhima <laurenti@alblinux.net>, 2008.
 
@@ -960,10 +960,10 @@
 
 
 ========== sr.po ==========
-# Serbian translation of mate-menus
+# Serbian translation of ukui-menus
 # Courtesy of Prevod.org team (http://prevod.org/) -- 2004 - 2009.
 #
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 #
 # Maintainer: Данило Шеган <dsegan@gmx.net>
 # Reviewed on 2005-09-03 by: Данило Шеган <danilo@gnome.org>"
@@ -974,10 +974,10 @@
 
 
 ========== sr@latin.po ==========
-# Serbian translation of mate-menus
+# Serbian translation of ukui-menus
 # Courtesy of Prevod.org team (http://prevod.org/) -- 2004 - 2009.
 #
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 #
 # Maintainer: Danilo Šegan <dsegan@gmx.net>
 # Reviewed on 2005-09-03 by: Danilo Šegan <danilo@gnome.org>"
@@ -988,7 +988,7 @@
 
 
 ========== sv.po ==========
-# Swedish messages for mate-menus.
+# Swedish messages for ukui-menus.
 # Copyright (C) 2004, 2005, 2006, 2007, 2009 Free Software Foundation, Inc.
 # Christian Rose <menthos@menthos.com>, 2004, 2005, 2006.
 # Daniel Nylander <po@danielnylander.se>, 2007, 2009.
@@ -1000,7 +1000,7 @@
 
 
 ========== ta.po ==========
-# translation of mate-menus.HEAD.po to TAMIL
+# translation of ukui-menus.HEAD.po to TAMIL
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
@@ -1012,10 +1012,10 @@
 
 
 ========== te.po ==========
-# translation of mate-menus.master.te.po to Telugu
-# Telugu translation of mate-menus
+# translation of ukui-menus.master.te.po to Telugu
+# Telugu translation of ukui-menus
 # Copyright (C) 2005,2007 Free Software Foundation, Andhra Pradesh
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 #
 # Y.Kiran Chandra <kiran@gnu.org.in>, 2005.
 # Bharat Kumar <jonnalagaddabharat@gmail.com>, 2007.
@@ -1025,9 +1025,9 @@
 
 
 ========== th.po ==========
-# Thai translation of mate-menus.
+# Thai translation of ukui-menus.
 # Copyright (C) 2004-2009 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Theppitak Karoonboonyanan <thep@linux.thai.net>, 2004-2007.
 #
 #
@@ -1037,9 +1037,9 @@
 
 ========== tr.po ==========
 # translation of tr.po to Turkish
-# translation of Mate-menus.
-# Copyright (C) 2004 THE Mate-menus'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the Mate-menus package.
+# translation of Ukui-menus.
+# Copyright (C) 2004 THE Ukui-menus'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Ukui-menus package.
 #
 #
 # Onur Can Çakmak <onur.cakmak@gmail.com>, 2006.
@@ -1060,9 +1060,9 @@
 
 
 ========== uk.po ==========
-# Ukrainian translation of mate-menus.
+# Ukrainian translation of ukui-menus.
 # Copyright (C) Free Software Foundation Inc., 2005
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Maxim Dziumanenko <dziumanenko@gmail.com>, 2005-2007.
 #
 
@@ -1080,9 +1080,9 @@
 
 
 ========== vi.po ==========
-# Vietnamese Translation for Mate Menus.
-# Copyright © 2007 Mate i18n Project for Vietnamese.
-# This file is distributed under the same license as the mate-menus package.
+# Vietnamese Translation for Ukui Menus.
+# Copyright © 2007 Ukui i18n Project for Vietnamese.
+# This file is distributed under the same license as the ukui-menus package.
 # Trinh Minh Thanh <tmthanh@yahoo.com>, 2004.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2007.
 # 
@@ -1091,9 +1091,9 @@
 
 
 ========== xh.po ==========
-# Xhosa translation of mate-menus
+# Xhosa translation of ukui-menus
 # Copyright (C) 2005 Canonical Ltd.
-# This file is distributed under the same license as the mate-menus package.
+# This file is distributed under the same license as the ukui-menus package.
 # Translation by Canonical Ltd <translations@canonical.com> with thanks to
 # Translation World CC in South Africa, 2005.
 #
@@ -1117,7 +1117,7 @@
 
 
 ========== zh_HK.po ==========
-# Chinese (Hong Kong) translation of mate-menu.
+# Chinese (Hong Kong) translation of ukui-menu.
 # Copyright (C) 2005, 06, 07 Free Software Foundation, Inc.
 # Woodman Tuen <wmtuen@gmail.com>, 2005-07.
 #
@@ -1127,7 +1127,7 @@
 
 
 ========== zh_TW.po ==========
-# Chinese (Taiwan) translation of mate-menu.
+# Chinese (Taiwan) translation of ukui-menu.
 # Copyright (C) 2005, 06, 07 Free Software Foundation, Inc.
 # Woodman Tuen <wmtuen@gmail.com>, 2005-07.
 #
