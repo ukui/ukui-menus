@@ -1,0 +1,33 @@
+mate-menus
+===========
+
+mate-menus contains the libmate-menu library, the layout configuration
+files for the MATE menu, as well as a simple menu editor.
+
+The libmate-menu library implements the "Desktop Menu Specification"
+from freedesktop.org:
+
+  http://freedesktop.org/wiki/Specifications/menu-spec
+  http://specifications.freedesktop.org/menu-spec/menu-spec-latest.html
+
+You may download updates to the package from:
+
+   http://pub.mate-desktop.org/
+
+mate-menus is a fork of gnome-menus.
+
+Installation
+============
+
+If you are not using a released version of mate-menus (for example, if
+you checked out the code from git), you first need to run './autogen.sh'.
+
+
+How to report bugs
+==================
+
+Bugs should be reported to the MATE bug tracking system:
+
+   https://github.com/mate-desktop/mate-menus/issues
+
+You will need to create an account for yourself.
