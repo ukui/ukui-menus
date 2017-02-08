@@ -1,3 +1,9 @@
+ukui-menus (1.16.4) yakkety; urgency=medium
+
+  * rm ./debian/watch
+
+ -- hebing <hebing@kylinos.cn>  Wed, 08 Feb 2017 09:29:32 +0800
+
 ukui-menus (1.16.3) yakkety; urgency=medium
 
   * rename .po/ mate/Mate/MATE to ukui/Ukui/UKUI
