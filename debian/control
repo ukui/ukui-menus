@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 9),
                intltool,
                libgirepository1.0-dev,
                libglib2.0-dev,
-               ukui-common (>= 1.16),
+               ukui-common,
                python-all-dev (>= 2.7),
 Standards-Version: 3.9.8
 Homepage: http://www.ukui.org/
@@ -21,7 +21,7 @@ Architecture: any
 Depends: python-ukui-menu (= ${binary:Version}),
          ${misc:Depends},
          ${python:Depends},
-Breaks: mate-control-center (<< 1.13.0),
+Breaks: ukui-control-center,
 Description: implementation of the freedesktop menu specification for UKUI
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
@@ -37,9 +37,9 @@ Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends},
 Breaks: libukuimenu,
-        ukui-menus (<= 1.0.2-1),
+        ukui-menus,
 Replaces: libukuimenu,
-          ukui-menus (<= 1.0.2-1),
+          ukui-menus,
 Provides: libukuimenu,
 Description: implementation of the freedesktop menu specification for UKUI (library)
  The package contains an implementation of the draft
