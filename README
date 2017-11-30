@@ -12,7 +12,7 @@ from freedesktop.org:
 
 You may download updates to the package from:
 
-   http://www.ukui.org/
+   http://pub.ukui-desktop.org/
 
 ukui-menus is a fork of gnome-menus.
 
@@ -28,6 +28,6 @@ How to report bugs
 
 Bugs should be reported to the UKUI bug tracking system:
 
-   https://github.com/ukui/ukui-menus/issues
+   https://github.com/ukui-desktop/ukui-menus/issues
 
 You will need to create an account for yourself.

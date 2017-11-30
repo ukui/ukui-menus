@@ -943,7 +943,7 @@
 # This file is distributed under the same license as the program package.
 #
 # Matic Žgur <mr.zgur@gmail.com>, 2006.
-# Matej Urbančič <ukuiju@svn.gnome.org>, 2005 - 2010.
+# Ukuij Urbančič <ukuiju@svn.gnome.org>, 2005 - 2010.
 #
 
 

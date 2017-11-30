@@ -12,7 +12,10 @@ DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/buildflags.mk
 
 %:
-	dh $@ $(DHFLAGS) --with python2
+	dh $@ $(DHFLAGS) --with python2,gir --without autoreconf
+
+override_dh_missing:
+	dh_missing --fail-missing
 
 override_dh_auto_configure:
 	# upstream tarball is without configure. autogen.sh will create it
@@ -25,7 +28,7 @@ override_dh_install:
 	rm -f debian/tmp/usr/lib/*/*.a
 	rm -f debian/tmp/usr/lib/*/*/*.la
 	rm -f debian/tmp/usr/lib/*/*/*.a
-	dh_install --fail-missing
+	dh_install
 
 override_dh_strip:
 	dh_strip -p libukui-menu2 --dbgsym-migration='libukui-menu2-dbg (<< 1.14.0-2~)'

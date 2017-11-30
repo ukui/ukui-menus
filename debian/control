@@ -1,19 +1,24 @@
 Source: ukui-menus
 Section: libs
 Priority: optional
-Maintainer: Kylin Team <ukui@kylinos.cn>
-Uploaders: Hebing <hebing@kylinos.cn> 
-Build-Depends: debhelper (>= 9),
+Maintainer: UKUI Packaging Team <pkg-ukui-team@lists.alioth.debian.org>
+Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Mike Gabriel <sunweaver@debian.org>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Build-Depends: debhelper (>= 10.3~),
                dh-python,
                dpkg-dev (>= 1.16.1.1),
                gobject-introspection,
                intltool,
                libgirepository1.0-dev,
                libglib2.0-dev,
-               ukui-common,
+               mate-common (>= 1.18),
                python-all-dev (>= 2.7),
-Standards-Version: 3.9.8
-Homepage: http://www.ukui.org/
+Standards-Version: 4.0.0
+Homepage: http://www.ukui-desktop.org/
+Vcs-Browser: https://anonscm.debian.org/git/pkg-ukui/ukui-menus.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-ukui/ukui-menus.git
 X-Python-Version: >= 2.7
 
 Package: ukui-menus
@@ -35,9 +40,6 @@ Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-Breaks: libukuimenu,
-Replaces: libukuimenu,
-Provides: libukuimenu,
 Description: implementation of the freedesktop menu specification for UKUI (library)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
@@ -54,9 +56,6 @@ Depends: libglib2.0-dev,
          libukui-menu2 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: libukuimenu-dev,
-Replaces: libukuimenu-dev,
-Provides: libukuimenu-dev,
 Description: implementation of the freedesktop menu specification for UKUI (development files)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:

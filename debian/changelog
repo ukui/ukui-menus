@@ -1,11 +1,5 @@
-ukui-menus (1.0.0) zesty; urgency=medium
+ukui-menus (1.0.0) artful; urgency=medium
 
-  * New Release. 
+  * Initial release.
 
- -- handsome_feng <jianfengli@ubuntukylin.com>  Sun, 12 Feb 2017 14:02:28 +0800
-
-ukui-menus (0.9.0) yakkety; urgency=medium
-
-  * Initial version.
-
- -- hebing <hebing@kylinos.cn>  Thu, 09 Feb 2017 13:56:55 +0800
+ -- penghuan <penghuan@kylinos.cn>  Thu, 30 Nov 2017 09:47:18 +0800

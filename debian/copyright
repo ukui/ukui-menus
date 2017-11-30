@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ukui-menus
-Upstream-Contact: Kylin Team <ukui@kylinos.cn>
-Source: http://github.com/ukui/ukui-menus/
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://git.ukui-desktop.org/ukui-menus/
 
 Files: libmenu/desktop-entries.c
        libmenu/desktop-entries.h
@@ -16,19 +16,16 @@ Files: libmenu/desktop-entries.c
        python/ukuimenu.c
        util/test-menu-spec.c
 Copyright: 2002-2005 Red Hat, Inc
-           2016 Tianjin KYLIN Information Technology Co.,Ltd
 License: LGPL-2+
 
 Files: libmenu/canonicalize.c
        libmenu/canonicalize.h
 Copyright: 1996-2002, Free Software Foundation, Inc
            2002, Red Hat, Inc. (trivial port to GLib)
-           2016 Tianjin KYLIN Information Technology Co.,Ltd
 License: LGPL-2.1+
 
 Files: util/ukui-menus-ls.py
 Copyright: 2008, Novell, Inc
-           2016 Tianjin KYLIN Information Technology Co.,Ltd
 License: GPL-2+
 
 Files: libmenu/menu-monitor.c
@@ -36,19 +33,17 @@ Copyright: 2005, Red Hat, Inc
            2006, Mark McLoughlin
            2007, Sebastian Dröge
            2008, Vincent Untz
-           2016 Tianjin KYLIN Information Technology Co.,Ltd
 License: LGPL-2+
 
 Files: libmenu/menu-monitor.h
 Copyright: 2005, Red Hat, Inc
            2011, Perberos
-           2016 Tianjin KYLIN Information Technology Co.,Ltd
 License: LGPL-2+
 
 Files: po/*
 Copyright:
  2004-2010, THE PACKAGE'S COPYRIGHT HOLDER
- 2010, Mate Foundation
+ 2010, Ukui Foundation
  2008, F Wolff <friedel@translate.org.za>
  2010, Daniel Martinez <entaltoaragon@gmail.com>
  2006, Djihed Afifi <djihed@gmail.com>
@@ -85,7 +80,7 @@ Copyright:
  2005, Martin Willemoes Hansen <mwh@sysrq.dk>
  2006, Ole Laursen <olau@hardworking.dk>
  2007, Peter Bach <bach.peter@gmail.com>
- 2004-2005, Hendrik Brandt <heb@mate-de.org>
+ 2004-2005, Hendrik Brandt <heb@ukui-de.org>
  2006-2007, Hendrik Richter <hendrikr@gnome.org>
  2009, Mario Blättermann <mariobl@gnome.org>
  2010, Christian Kirbach <Christian.Kirbach@googlemail.com>
@@ -147,7 +142,7 @@ Copyright:
  2009, Sveinn í Felli <sveinki@nett.is>
  2005-2009, Francesco Marletta <francesco.marletta @ tiscali.it>
  2009, Luca Ferretti <elle.uca@libero.it>
- 2004, Satoru SATOH <ss@mate.gr.jp>
+ 2004, Satoru SATOH <ss@ukui.gr.jp>
  2005-2007, Takeshi AIHANA <takeshi.aihana@gmail.com>
  2009-2010, Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>
  2008, Moldabekov Margulan <moldabekov@gmail.com>
@@ -208,7 +203,7 @@ Copyright:
  2007-2008, Leonardo Ferreira Fontenelle <leonardof@gnome.org>
  2008, Fabrício Godoy <skarllot@gmail.com>
  2009, Krix Apolinário <krixapolinario@gmail.com>
- 2005, Dan Damian <dand@mate.ro>
+ 2005, Dan Damian <dand@ukui.ro>
  2007, Alexandru Szasz <alexxed@gmail.com>
  2008, Adi Roiban <adi@roiban.ro>
  2004, Dmitry G. Mastrukov <dmitry@taurussoft.org>
@@ -226,7 +221,7 @@ Copyright:
  2007, Peter Tuharsky <tuharsky@misbb.sk>
  2010, Pavol Klačanský <pavol@klacansky.com>
  2006, Matic Žgur <mr.zgur@gmail.com>
- 2005-2010, Matej Urbančič <mateju@svn.gnome.org>
+ 2005-2010, Ukuij Urbančič <ukuiju@svn.gnome.org>
  2005-2007, Elian Myftiu <elian@alblinux.net>
  2008, Laurent Dhima <laurenti@alblinux.net>
  2005, Данило Шеган <danilo@gnome.org>
@@ -252,7 +247,6 @@ Copyright:
  2005-2007, Clytie Siddall <clytie@riverland.net.au>
  2004, Funda Wang <fundawang@linux.net.cn>
  2005-2007, Woodman Tuen <wmtuen@gmail.com>
- 2016 Tianjin KYLIN Information Technology Co.,Ltd
 License: GPL-2+ or LGPL-2+ or LGPL-2.1+
 Comment:
  Same license(s) as the ukui-menus package.
@@ -284,7 +278,6 @@ Comment:
 Files: debian/*
 Copyright: 2011-2014 Stefano Karapetsas <stefano@karapetsas.com>
            2013-2014 Mike Gabriel <sunweaver@debian.org>
-           2016 Tianjin KYLIN Information Technology Co.,Ltd
 License: GPL-2+ or LGPL-2+
 
 License: GPL-2+
