@@ -8,24 +8,25 @@ Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
 Build-Depends: debhelper (>= 10.3~),
                dh-python,
+               python3,
                dpkg-dev (>= 1.16.1.1),
                gobject-introspection,
                intltool,
                libgirepository1.0-dev,
                libglib2.0-dev,
                mate-common (>= 1.18),
-               python-all-dev (>= 2.7),
-Standards-Version: 4.0.0
+               python3-all-dev,
+Standards-Version: 4.1.1
 Homepage: http://www.ukui-desktop.org/
 Vcs-Browser: https://anonscm.debian.org/git/pkg-ukui/ukui-menus.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-ukui/ukui-menus.git
-X-Python-Version: >= 2.7
+X-Python-Version: >= 3.6
 
 Package: ukui-menus
 Architecture: any
-Depends: python-ukui-menu (= ${binary:Version}),
+Depends: python3-ukui-menu (= ${binary:Version}),
          ${misc:Depends},
-         ${python:Depends},
+         ${python3:Depends},
 Description: implementation of the freedesktop menu specification for UKUI
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
@@ -55,8 +56,7 @@ Section: libdevel
 Depends: libglib2.0-dev,
          libukui-menu2 (= ${binary:Version}),
          ${misc:Depends},
-         ${shlibs:Depends},
-Description: implementation of the freedesktop menu specification for UKUI (development files)
+Description: implementation of the freedesktop menu specification for UKUI
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
  .
@@ -69,21 +69,20 @@ Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends},
 Description: GObject introspection data for the UKUI menu specification
- This package contains introspection data for UKUI menu specification, an
+ This package contains introspection data for UKUI menu specification, 
  an implementation of the draft "Desktop Menu Specification" from
  freedesktop.org
  .
  It can be used by packages using the GIRepository format to generate dynamic
  bindings.
 
-Package: python-ukui-menu
+Package: python3-ukui-menu
 Section: python
 Architecture: any
 Depends: ${misc:Depends},
-         ${python:Depends},
          ${shlibs:Depends},
+         ${python3:Depends},
 Description: implementation of the freedesktop menu specification for UKUI (Python bindings)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org.

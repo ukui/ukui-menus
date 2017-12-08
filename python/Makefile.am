@@ -14,7 +14,7 @@ ukuimenudir = $(pyexecdir)
 ukuimenu_LTLIBRARIES = ukuimenu.la
 
 ukuimenu_la_SOURCES = ukuimenu.c
-ukuimenu_la_LDFLAGS = -module -avoid-version -fPIC -export-symbols-regex initukuimenu
+ukuimenu_la_LDFLAGS = -module -avoid-version -fPIC -Xlinker -export-dynamic -export-symbols-regex ukuimenu
 ukuimenu_la_LIBADD = $(GLIB_LIBS) $(PYTHON_LIBS) $(top_builddir)/libmenu/libukui-menu.la
 
 -include $(top_srcdir)/git.mk

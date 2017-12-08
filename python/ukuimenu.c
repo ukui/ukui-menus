@@ -159,48 +159,44 @@ static struct PyMethodDef pyukuimenu_tree_item_methods[] = {
 };
 
 static PyTypeObject PyUkuiMenuTreeItem_Type = {
-	PyObject_HEAD_INIT(NULL)
-	0,                                             /* ob_size */
+	PyVarObject_HEAD_INIT(NULL, 0)
 	"ukuimenu.Item",                               /* tp_name */
 	sizeof(PyUkuiMenuTreeItem),                    /* tp_basicsize */
 	0,                                             /* tp_itemsize */
 	(destructor) pyukuimenu_tree_item_dealloc,     /* tp_dealloc */
-	(printfunc) 0,                                 /* tp_print */
-	(getattrfunc) 0,                               /* tp_getattr */
-	(setattrfunc) 0,                               /* tp_setattr */
-	(cmpfunc) 0,                                   /* tp_compare */
-	(reprfunc) 0,                                  /* tp_repr */
+	0,              		               /* tp_print */
+	0,                              	       /* tp_getattr */
+	0,                         		       /* tp_setattr */
+	0,                  			       /* tp_reserved */
+	0,                            		       /* tp_repr */
 	0,                                             /* tp_as_number */
 	0,                                             /* tp_as_sequence */
 	0,                                             /* tp_as_mapping */
-	(hashfunc) 0,                                  /* tp_hash */
-	(ternaryfunc) 0,                               /* tp_call */
-	(reprfunc) 0,                                  /* tp_str */
-	(getattrofunc) 0,                              /* tp_getattro */
-	(setattrofunc) 0,                              /* tp_setattro */
+	0,                            		       /* tp_hash */
+	0,                          		       /* tp_call */
+	0,                              	       /* tp_str */
+	0,                         		       /* tp_getattro */
+	0,                           		       /* tp_setattro */
 	0,                                             /* tp_as_buffer */
 	Py_TPFLAGS_DEFAULT | Py_TPFLAGS_BASETYPE,      /* tp_flags */
 	NULL,                                          /* Documentation string */
-	(traverseproc) 0,                              /* tp_traverse */
-	(inquiry) 0,                                   /* tp_clear */
-	(richcmpfunc) 0,                               /* tp_richcompare */
+	0,                          		       /* tp_traverse */
+	0,                              	       /* tp_clear */
+	0,                         		       /* tp_richcompare */
 	0,                                             /* tp_weaklistoffset */
-	(getiterfunc) 0,                               /* tp_iter */
-	(iternextfunc) 0,                              /* tp_iternext */
+	0,                         		       /* tp_iter */
+	0,                            		       /* tp_iternext */
 	pyukuimenu_tree_item_methods,                  /* tp_methods */
 	0,                                             /* tp_members */
 	0,                                             /* tp_getset */
-	(PyTypeObject*) 0,                             /* tp_base */
-	(PyObject*) 0,                                 /* tp_dict */
+	0,                        		       /* tp_base */
+	0,                             		       /* tp_dict */
 	0,                                             /* tp_descr_get */
 	0,                                             /* tp_descr_set */
 	0,                                             /* tp_dictoffset */
 	(initproc) 0,                                  /* tp_init */
 	0,                                             /* tp_alloc */
 	0,                                             /* tp_new */
-	0,                                             /* tp_free */
-	(inquiry) 0,                                   /* tp_is_gc */
-	(PyObject*) 0,                                 /* tp_bases */
 };
 
 static PyObject* pyukuimenu_tree_directory_get_contents(PyObject* self, PyObject* args)
@@ -294,7 +290,7 @@ static PyObject* pyukuimenu_tree_directory_get_name(PyObject* self, PyObject* ar
 		return Py_None;
 	}
 
-	return PyString_FromString(name);
+	return PyBytes_FromString(name);
 }
 
 static PyObject* pyukuimenu_tree_directory_get_comment(PyObject* self, PyObject* args)
@@ -320,7 +316,7 @@ static PyObject* pyukuimenu_tree_directory_get_comment(PyObject* self, PyObject*
 		return Py_None;
 	}
 
-	return PyString_FromString(comment);
+	return PyBytes_FromString(comment);
 }
 
 static PyObject* pyukuimenu_tree_directory_get_icon(PyObject* self, PyObject* args)
@@ -346,7 +342,7 @@ static PyObject* pyukuimenu_tree_directory_get_icon(PyObject* self, PyObject* ar
 		return Py_None;
     }
 
-	return PyString_FromString(icon);
+	return PyBytes_FromString(icon);
 }
 
 static PyObject* pyukuimenu_tree_directory_get_desktop_file_path(PyObject* self, PyObject* args)
@@ -372,7 +368,7 @@ static PyObject* pyukuimenu_tree_directory_get_desktop_file_path(PyObject* self,
 		return Py_None;
 	}
 
-	return PyString_FromString(path);
+	return PyBytes_FromString(path);
 }
 
 static PyObject* pyukuimenu_tree_directory_get_menu_id(PyObject* self, PyObject* args)
@@ -398,7 +394,7 @@ static PyObject* pyukuimenu_tree_directory_get_menu_id(PyObject* self, PyObject*
 		return Py_None;
 	}
 
-	return PyString_FromString(menu_id);
+	return PyBytes_FromString(menu_id);
 }
 
 static PyObject* pyukuimenu_tree_directory_get_tree(PyObject* self, PyObject* args)
@@ -454,7 +450,7 @@ static PyObject* pyukuimenu_tree_directory_make_path(PyObject* self, PyObject* a
 		return Py_None;
 	}
 
-	retval = PyString_FromString(path);
+	retval = PyBytes_FromString(path);
 
 	g_free(path);
 
@@ -463,11 +459,11 @@ static PyObject* pyukuimenu_tree_directory_make_path(PyObject* self, PyObject* a
 
 static PyObject* pyukuimenu_tree_directory_getattro(PyUkuiMenuTreeDirectory* self, PyObject* py_attr)
 {
-	if (PyString_Check(py_attr))
+	if (PyBytes_Check(py_attr))
 	{
 		char* attr;
 
-		attr = PyString_AsString(py_attr);
+		attr = PyBytes_AS_STRING(py_attr);
 
 		if (!strcmp(attr, "__members__"))
 		{
@@ -536,8 +532,7 @@ static struct PyMethodDef pyukuimenu_tree_directory_methods[] = {
 };
 
 static PyTypeObject PyUkuiMenuTreeDirectory_Type = {
-	PyObject_HEAD_INIT(NULL)
-	0,                                              /* ob_size */
+	PyVarObject_HEAD_INIT(NULL, 0)
 	"ukuimenu.Directory",                           /* tp_name */
 	sizeof(PyUkuiMenuTreeDirectory),                /* tp_basicsize */
 	0,                                              /* tp_itemsize */
@@ -545,7 +540,7 @@ static PyTypeObject PyUkuiMenuTreeDirectory_Type = {
 	(printfunc) 0,                                  /* tp_print */
 	(getattrfunc) 0,                                /* tp_getattr */
 	(setattrfunc) 0,                                /* tp_setattr */
-	(cmpfunc) 0,                                    /* tp_compare */
+	(PyAsyncMethods *) 0,                             /* tp_reserved */
 	(reprfunc) 0,                                   /* tp_repr */
 	0,                                              /* tp_as_number */
 	0,                                              /* tp_as_sequence */
@@ -575,9 +570,6 @@ static PyTypeObject PyUkuiMenuTreeDirectory_Type = {
 	(initproc) 0,                                   /* tp_init */
 	0,                                              /* tp_alloc */
 	0,                                              /* tp_new */
-	0,                                              /* tp_free */
-	(inquiry) 0,                                    /* tp_is_gc */
-	(PyObject*) 0,                                  /* tp_bases */
 };
 
 static PyUkuiMenuTreeDirectory* pyukuimenu_tree_directory_wrap(UkuiMenuTreeDirectory* directory)
@@ -625,7 +617,7 @@ static PyObject* pyukuimenu_tree_entry_get_name(PyObject* self, PyObject* args)
 		return Py_None;
 	}
 
-	return PyString_FromString(name);
+	return PyBytes_FromString(name);
 }
 
 static PyObject* pyukuimenu_tree_entry_get_generic_name(PyObject* self, PyObject* args)
@@ -651,7 +643,7 @@ static PyObject* pyukuimenu_tree_entry_get_generic_name(PyObject* self, PyObject
 		return Py_None;
 	}
 
-	return PyString_FromString(generic_name);
+	return PyBytes_FromString(generic_name);
 }
 
 static PyObject* pyukuimenu_tree_entry_get_display_name(PyObject* self, PyObject* args)
@@ -677,7 +669,7 @@ static PyObject* pyukuimenu_tree_entry_get_display_name(PyObject* self, PyObject
 		return Py_None;
 	}
 
-	return PyString_FromString(display_name);
+	return PyBytes_FromString(display_name);
 }
 
 static PyObject* pyukuimenu_tree_entry_get_comment(PyObject* self, PyObject* args)
@@ -703,7 +695,7 @@ static PyObject* pyukuimenu_tree_entry_get_comment(PyObject* self, PyObject* arg
 		return Py_None;
 	}
 
-	return PyString_FromString(comment);
+	return PyBytes_FromString(comment);
 }
 
 static PyObject* pyukuimenu_tree_entry_get_icon(PyObject* self, PyObject* args)
@@ -729,7 +721,7 @@ static PyObject* pyukuimenu_tree_entry_get_icon(PyObject* self, PyObject* args)
 		return Py_None;
 	}
 
-	return PyString_FromString(icon);
+	return PyBytes_FromString(icon);
 }
 
 static PyObject* pyukuimenu_tree_entry_get_exec(PyObject* self, PyObject* args)
@@ -755,7 +747,7 @@ static PyObject* pyukuimenu_tree_entry_get_exec(PyObject* self, PyObject* args)
 		return Py_None;
 	}
 
-	return PyString_FromString(exec);
+	return PyBytes_FromString(exec);
 }
 
 static PyObject* pyukuimenu_tree_entry_get_launch_in_terminal(PyObject* self, PyObject* args)
@@ -810,7 +802,7 @@ static PyObject* pyukuimenu_tree_entry_get_desktop_file_path(PyObject* self, PyO
 		return Py_None;
 	}
 
-	return PyString_FromString(desktop_file_path);
+	return PyBytes_FromString(desktop_file_path);
 }
 
 static PyObject* pyukuimenu_tree_entry_get_desktop_file_id(PyObject* self, PyObject* args)
@@ -836,7 +828,7 @@ static PyObject* pyukuimenu_tree_entry_get_desktop_file_id(PyObject* self, PyObj
 		return Py_None;
 	}
 
-	return PyString_FromString(desktop_file_id);
+	return PyBytes_FromString(desktop_file_id);
 }
 
 static PyObject* pyukuimenu_tree_entry_get_is_excluded(PyObject* self, PyObject* args)
@@ -891,11 +883,11 @@ static PyObject* pyukuimenu_tree_entry_get_is_nodisplay(PyObject* self, PyObject
 
 static PyObject* pyukuimenu_tree_entry_getattro(PyUkuiMenuTreeEntry* self, PyObject* py_attr)
 {
-	if (PyString_Check(py_attr))
+	if (PyBytes_Check(py_attr))
 	{
 		char* attr;
 
-		attr = PyString_AsString(py_attr);
+		attr = PyBytes_AS_STRING(py_attr);
 
 		if (!strcmp(attr, "__members__"))
 		{
@@ -985,8 +977,7 @@ static struct PyMethodDef pyukuimenu_tree_entry_methods[] = {
 };
 
 static PyTypeObject PyUkuiMenuTreeEntry_Type = {
-	PyObject_HEAD_INIT(NULL)
-	0,                                             /* ob_size */
+	PyVarObject_HEAD_INIT(NULL, 0)
 	"ukuimenu.Entry",                              /* tp_name */
 	sizeof(PyUkuiMenuTreeEntry),                   /* tp_basicsize */
 	0,                                             /* tp_itemsize */
@@ -994,7 +985,7 @@ static PyTypeObject PyUkuiMenuTreeEntry_Type = {
 	(printfunc) 0,                                 /* tp_print */
 	(getattrfunc) 0,                               /* tp_getattr */
 	(setattrfunc) 0,                               /* tp_setattr */
-	(cmpfunc) 0,                                   /* tp_compare */
+	(PyAsyncMethods *) 0,                            /* tp_reserved */
 	(reprfunc) 0,                                  /* tp_repr */
 	0,                                             /* tp_as_number */
 	0,                                             /* tp_as_sequence */
@@ -1024,9 +1015,6 @@ static PyTypeObject PyUkuiMenuTreeEntry_Type = {
 	(initproc) 0,                                  /* tp_init */
 	0,                                             /* tp_alloc */
 	0,                                             /* tp_new */
-	0,                                             /* tp_free */
-	(inquiry) 0,                                   /* tp_is_gc */
-	(PyObject*) 0,                                 /* tp_bases */
 };
 
 static PyUkuiMenuTreeEntry* pyukuimenu_tree_entry_wrap(UkuiMenuTreeEntry* entry)
@@ -1052,8 +1040,7 @@ static PyUkuiMenuTreeEntry* pyukuimenu_tree_entry_wrap(UkuiMenuTreeEntry* entry)
 }
 
 static PyTypeObject PyUkuiMenuTreeSeparator_Type = {
-	PyObject_HEAD_INIT(NULL)
-	0,                                             /* ob_size */
+	PyVarObject_HEAD_INIT(NULL, 0)
 	"ukuimenu.Separator",                          /* tp_name */
 	sizeof(PyUkuiMenuTreeSeparator),               /* tp_basicsize */
 	0,                                             /* tp_itemsize */
@@ -1061,7 +1048,7 @@ static PyTypeObject PyUkuiMenuTreeSeparator_Type = {
 	(printfunc) 0,                                 /* tp_print */
 	(getattrfunc) 0,                               /* tp_getattr */
 	(setattrfunc) 0,                               /* tp_setattr */
-	(cmpfunc) 0,                                   /* tp_compare */
+	(PyAsyncMethods *) 0,                            /* tp_reserved */
 	(reprfunc) 0,                                  /* tp_repr */
 	0,                                             /* tp_as_number */
 	0,                                             /* tp_as_sequence */
@@ -1091,9 +1078,6 @@ static PyTypeObject PyUkuiMenuTreeSeparator_Type = {
 	(initproc) 0,                                  /* tp_init */
 	0,                                             /* tp_alloc */
 	0,                                             /* tp_new */
-	0,                                             /* tp_free */
-	(inquiry) 0,                                   /* tp_is_gc */
-	(PyObject*) 0,                                 /* tp_bases */
 };
 
 static PyUkuiMenuTreeSeparator* pyukuimenu_tree_separator_wrap(UkuiMenuTreeSeparator* separator)
@@ -1151,11 +1135,11 @@ static PyObject* pyukuimenu_tree_header_get_directory(PyObject* self, PyObject* 
 
 static PyObject* pyukuimenu_tree_header_getattro(PyUkuiMenuTreeHeader* self, PyObject* py_attr)
 {
-	if (PyString_Check(py_attr))
+	if (PyBytes_Check(py_attr))
 	{
 		char* attr;
 
-		attr = PyString_AsString(py_attr);
+		attr = PyBytes_AS_STRING(py_attr);
 
 		if (!strcmp(attr, "__members__"))
 		{
@@ -1187,8 +1171,7 @@ static struct PyMethodDef pyukuimenu_tree_header_methods[] = {
 };
 
 static PyTypeObject PyUkuiMenuTreeHeader_Type = {
-	PyObject_HEAD_INIT(NULL)
-	0,                                             /* ob_size */
+	PyVarObject_HEAD_INIT(NULL, 0)
 	"ukuimenu.Header",                             /* tp_name */
 	sizeof(PyUkuiMenuTreeHeader),                  /* tp_basicsize */
 	0,                                             /* tp_itemsize */
@@ -1196,7 +1179,7 @@ static PyTypeObject PyUkuiMenuTreeHeader_Type = {
 	(printfunc) 0,                                 /* tp_print */
 	(getattrfunc) 0,                               /* tp_getattr */
 	(setattrfunc) 0,                               /* tp_setattr */
-	(cmpfunc) 0,                                   /* tp_compare */
+	(PyAsyncMethods *) 0,                            /* tp_reserved */
 	(reprfunc) 0,                                  /* tp_repr */
 	0,                                             /* tp_as_number */
 	0,                                             /* tp_as_sequence */
@@ -1226,9 +1209,6 @@ static PyTypeObject PyUkuiMenuTreeHeader_Type = {
 	(initproc) 0,                                  /* tp_init */
 	0,                                             /* tp_alloc */
 	0,                                             /* tp_new */
-	0,                                             /* tp_free */
-	(inquiry) 0,                                   /* tp_is_gc */
-	(PyObject*) 0,                                 /* tp_bases */
 };
 
 static PyUkuiMenuTreeHeader* pyukuimenu_tree_header_wrap(UkuiMenuTreeHeader* header)
@@ -1330,11 +1310,11 @@ static PyObject* pyukuimenu_tree_alias_get_item(PyObject* self, PyObject* args)
 
 static PyObject* pyukuimenu_tree_alias_getattro(PyUkuiMenuTreeAlias* self, PyObject* py_attr)
 {
-	if (PyString_Check(py_attr))
+	if (PyBytes_Check(py_attr))
 	{
 		char* attr;
 
-		attr = PyString_AsString(py_attr);
+		attr = PyBytes_AS_STRING(py_attr);
 
 		if (!strcmp(attr, "__members__"))
 		{
@@ -1372,8 +1352,7 @@ static struct PyMethodDef pyukuimenu_tree_alias_methods[] = {
 };
 
 static PyTypeObject PyUkuiMenuTreeAlias_Type = {
-	PyObject_HEAD_INIT(NULL)
-	0,                                             /* ob_size */
+	PyVarObject_HEAD_INIT(NULL, 0)
 	"ukuimenu.Alias",                              /* tp_name */
 	sizeof(PyUkuiMenuTreeAlias),                   /* tp_basicsize */
 	0,                                             /* tp_itemsize */
@@ -1381,7 +1360,7 @@ static PyTypeObject PyUkuiMenuTreeAlias_Type = {
 	(printfunc) 0,                                 /* tp_print */
 	(getattrfunc) 0,                               /* tp_getattr */
 	(setattrfunc) 0,                               /* tp_setattr */
-	(cmpfunc) 0,                                   /* tp_compare */
+	(PyAsyncMethods *) 0,                            /* tp_reserved */
 	(reprfunc) 0,                                  /* tp_repr */
 	0,                                             /* tp_as_number */
 	0,                                             /* tp_as_sequence */
@@ -1411,9 +1390,6 @@ static PyTypeObject PyUkuiMenuTreeAlias_Type = {
 	(initproc) 0,                                  /* tp_init */
 	0,                                             /* tp_alloc */
 	0,                                             /* tp_new */
-	0,                                             /* tp_free */
-	(inquiry) 0,                                   /* tp_is_gc */
-	(PyObject*) 0,                                 /* tp_bases */
 };
 
 static PyUkuiMenuTreeAlias* pyukuimenu_tree_alias_wrap(UkuiMenuTreeAlias* alias)
@@ -1461,7 +1437,7 @@ static PyObject* pyukuimenu_tree_get_menu_file(PyObject* self, PyObject* args)
 		return Py_None;
 	}
 
-	return PyString_FromString(menu_file);
+	return PyBytes_FromString(menu_file);
 }
 
 static PyObject* pyukuimenu_tree_get_root_directory(PyObject* self, PyObject* args)
@@ -1724,11 +1700,11 @@ static void pyukuimenu_tree_dealloc(PyUkuiMenuTree* self)
 
 static PyObject* pyukuimenu_tree_getattro(PyUkuiMenuTree* self, PyObject* py_attr)
 {
-	if (PyString_Check(py_attr))
+	if (PyBytes_Check(py_attr))
 	{
 		char* attr;
 
-		attr = PyString_AsString(py_attr);
+		attr = PyBytes_AS_STRING(py_attr);
 
 		if (!strcmp(attr, "__members__"))
 		{
@@ -1757,19 +1733,19 @@ static int pyukuimenu_tree_setattro(PyUkuiMenuTree* self, PyObject* py_attr, PyO
 
 	tree = (PyUkuiMenuTree*) self;
 
-	if (PyString_Check(py_attr))
+	if (PyBytes_Check(py_attr))
 	{
 		char* attr;
 
-		attr = PyString_AsString(py_attr);
+		attr = PyBytes_AS_STRING(py_attr);
 
 		if (!strcmp(attr, "sort_key"))
 		{
-			if (PyInt_Check(py_value))
+			if (PyLong_Check(py_value))
 			{
 				int sort_key;
 
-				sort_key = PyInt_AsLong(py_value);
+				sort_key = PyLong_AsLong(py_value);
 
 				if (sort_key < UKUIMENU_TREE_SORT_FIRST || sort_key > UKUIMENU_TREE_SORT_LAST)
 				{
@@ -1798,8 +1774,7 @@ static struct PyMethodDef pyukuimenu_tree_methods[] = {
 };
 
 static PyTypeObject PyUkuiMenuTree_Type = {
-	PyObject_HEAD_INIT(NULL)
-	0,                                    /* ob_size */
+	PyVarObject_HEAD_INIT(NULL, 0)
 	"ukuimenu.Tree",                      /* tp_name */
 	sizeof(PyUkuiMenuTree),               /* tp_basicsize */
 	0,                                    /* tp_itemsize */
@@ -1807,7 +1782,7 @@ static PyTypeObject PyUkuiMenuTree_Type = {
 	(printfunc) 0,                        /* tp_print */
 	(getattrfunc) 0,                      /* tp_getattr */
 	(setattrfunc) 0,                      /* tp_setattr */
-	(cmpfunc) 0,                          /* tp_compare */
+	(PyAsyncMethods *) 0,                   /* tp_reserved */
 	(reprfunc) 0,                         /* tp_repr */
 	0,                                    /* tp_as_number */
 	0,                                    /* tp_as_sequence */
@@ -1837,9 +1812,6 @@ static PyTypeObject PyUkuiMenuTree_Type = {
 	(initproc) 0,                         /* tp_init */
 	0,                                    /* tp_alloc */
 	0,                                    /* tp_new */
-	0,                                    /* tp_free */
-	(inquiry) 0,                          /* tp_is_gc */
-	(PyObject*) 0,                        /* tp_bases */
 };
 
 static PyUkuiMenuTree* pyukuimenu_tree_wrap(UkuiMenuTree* tree)
@@ -1894,34 +1866,42 @@ static PyObject* pyukuimenu_lookup_tree(PyObject* self, PyObject* args)
 }
 
 static struct PyMethodDef pyukuimenu_methods[] = {
-	{"lookup_tree", pyukuimenu_lookup_tree, METH_VARARGS},
+	{"lookup_tree", pyukuimenu_lookup_tree, METH_VARARGS, "lookup tree"},
 	{NULL, NULL, 0 }
 };
 
-void initukuimenu(void);
+static struct PyModuleDef ukuimenumodule = {
+	PyModuleDef_HEAD_INIT,
+	"ukuimenumodule",		
+	NULL,					
+	-1,					 
+	pyukuimenu_methods
+};
 
-DL_EXPORT(void) initukuimenu(void)
+PyMODINIT_FUNC PyInit_ukuimenu(void)
 {
 	PyObject* mod;
+	printf("init aaaaaaaaaaaaaaaaaaaaaaaaaa\n");
 
-	mod = Py_InitModule4("ukuimenu", pyukuimenu_methods, 0, 0, PYTHON_API_VERSION);
+	mod = PyModule_Create(&ukuimenumodule);
+	printf("init bbbbbbbbbbbbbbbbbbbbbbbbbbbb\n");
 
 	#define REGISTER_TYPE(t, n) G_STMT_START \
 	{ \
-		t.ob_type = &PyType_Type; \
 		PyType_Ready(&t); \
-		PyModule_AddObject(mod, n, (PyObject*) &t); \
+		PyModule_AddObject(mod, n, (PyObject*)&t); \
 	} G_STMT_END
+	printf("init cccccccccccccccccccccccccccccc\n");
 
 	REGISTER_TYPE(PyUkuiMenuTree_Type,     "Tree");
 	REGISTER_TYPE(PyUkuiMenuTreeItem_Type, "Item");
+	printf("init dddddddddddddddddddddddddddddddddd\n");
 
 	#define REGISTER_ITEM_TYPE(t, n) G_STMT_START \
 	{ \
-		t.ob_type = &PyType_Type; \
 		t.tp_base = &PyUkuiMenuTreeItem_Type; \
-		PyType_Ready(&t); \
-		PyModule_AddObject(mod, n, (PyObject*) &t); \
+		PyType_Ready((PyTypeObject*)&t); \
+		PyModule_AddObject(mod, n, (PyObject*)&t); \
 	} G_STMT_END
 
 	REGISTER_ITEM_TYPE(PyUkuiMenuTreeDirectory_Type, "Directory");
@@ -1929,6 +1909,7 @@ DL_EXPORT(void) initukuimenu(void)
 	REGISTER_ITEM_TYPE(PyUkuiMenuTreeSeparator_Type, "Separator");
 	REGISTER_ITEM_TYPE(PyUkuiMenuTreeHeader_Type,    "Header");
 	REGISTER_ITEM_TYPE(PyUkuiMenuTreeAlias_Type,     "Alias");
+	printf("init eeeeeeeeeeeeeeeeeeeeeeeeeee\n");
 
 	PyModule_AddIntConstant(mod, "TYPE_INVALID",   UKUIMENU_TREE_ITEM_INVALID);
 	PyModule_AddIntConstant(mod, "TYPE_DIRECTORY", UKUIMENU_TREE_ITEM_DIRECTORY);
@@ -1945,4 +1926,7 @@ DL_EXPORT(void) initukuimenu(void)
 
 	PyModule_AddIntConstant(mod, "SORT_NAME",         UKUIMENU_TREE_SORT_NAME);
 	PyModule_AddIntConstant(mod, "SORT_DISPLAY_NAME", UKUIMENU_TREE_SORT_DISPLAY_NAME);
+
+	printf("init fffffffffffffffffffffffffffffffff\n");
+	return mod;
 }

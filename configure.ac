@@ -1,6 +1,6 @@
 AC_PREREQ(2.62)
 
-AC_INIT([ukui-menus], [1.18.0], [http://www.ukui-desktop.org])
+AC_INIT([ukui-menus], [1.0.0], [http://www.ukui-desktop.org])
 AC_CONFIG_SRCDIR(libmenu/ukuimenu-tree.h)
 
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz check-news])
@@ -40,7 +40,6 @@ AC_SUBST(GLIB_CFLAGS)
 AC_SUBST(GLIB_LIBS)
 
 #UKUI_COMPILE_WARNINGS(yes)
-
 AC_ARG_ENABLE(deprecation_flags,
               [AC_HELP_STRING([--enable-deprecation-flags],
                               [use *_DISABLE_DEPRECATED flags @<:@default=no@:>@])],,
@@ -77,7 +76,7 @@ AC_ARG_ENABLE(python,
 
 # Detect if we can build Python bindings (need python and python headers)
 if test "x$enable_python" = "xyes" ; then
-	AM_PATH_PYTHON(2.7)
+	AM_PATH_PYTHON(3.6)
 	PKG_CHECK_MODULES([PYTHON], [python-${PYTHON_VERSION}], [have_python=yes], [have_python=no])
 else
 	have_python=no
