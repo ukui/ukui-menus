@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ukui-menus
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.ukui-desktop.org/ukui-menus/
+Upstream-Contact: Kylin Team <ukui@kylinos.cn>
+Source: http://github.com/ukui/ukui-menus
 
 Files: libmenu/desktop-entries.c
        libmenu/desktop-entries.h
@@ -16,16 +16,19 @@ Files: libmenu/desktop-entries.c
        python/ukuimenu.c
        util/test-menu-spec.c
 Copyright: 2002-2005 Red Hat, Inc
+           2017, Tianjin KYLIN Information Technology Co., Ltd.
 License: LGPL-2+
 
 Files: libmenu/canonicalize.c
        libmenu/canonicalize.h
 Copyright: 1996-2002, Free Software Foundation, Inc
            2002, Red Hat, Inc. (trivial port to GLib)
+           2017, Tianjin KYLIN Information Technology Co., Ltd.
 License: LGPL-2.1+
 
 Files: util/ukui-menus-ls.py
 Copyright: 2008, Novell, Inc
+           2017, Tianjin KYLIN Information Technology Co., Ltd.
 License: GPL-2+
 
 Files: libmenu/menu-monitor.c
@@ -33,17 +36,19 @@ Copyright: 2005, Red Hat, Inc
            2006, Mark McLoughlin
            2007, Sebastian Dröge
            2008, Vincent Untz
+           2017, Tianjin KYLIN Information Technology Co., Ltd.
 License: LGPL-2+
 
 Files: libmenu/menu-monitor.h
 Copyright: 2005, Red Hat, Inc
            2011, Perberos
+           2017, Tianjin KYLIN Information Technology Co., Ltd.
 License: LGPL-2+
 
 Files: po/*
 Copyright:
  2004-2010, THE PACKAGE'S COPYRIGHT HOLDER
- 2010, Ukui Foundation
+ 2010, Mate Foundation
  2008, F Wolff <friedel@translate.org.za>
  2010, Daniel Martinez <entaltoaragon@gmail.com>
  2006, Djihed Afifi <djihed@gmail.com>
@@ -278,6 +283,7 @@ Comment:
 Files: debian/*
 Copyright: 2011-2014 Stefano Karapetsas <stefano@karapetsas.com>
            2013-2014 Mike Gabriel <sunweaver@debian.org>
+           2017 penghuan <penghuan@kylinos.cn>
 License: GPL-2+ or LGPL-2+
 
 License: GPL-2+

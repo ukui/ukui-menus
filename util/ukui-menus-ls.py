@@ -2,6 +2,7 @@
 
 #
 # Copyright (C) 2008 Novell, Inc.
+# Copyright (C) 2017,Tianjin KYLIN Information Technology Co., Ltd.
 #
 # Authors: Vincent Untz <vuntz@gnome.org>
 #

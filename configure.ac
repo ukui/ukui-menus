@@ -1,6 +1,6 @@
 AC_PREREQ(2.62)
 
-AC_INIT([ukui-menus], [1.0.0], [http://www.ukui-desktop.org])
+AC_INIT([ukui-menus], [1.0.0], [http://www.ukui.org])
 AC_CONFIG_SRCDIR(libmenu/ukuimenu-tree.h)
 
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz check-news])

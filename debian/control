@@ -1,11 +1,9 @@
 Source: ukui-menus
 Section: libs
 Priority: optional
-Maintainer: UKUI Packaging Team <pkg-ukui-team@lists.alioth.debian.org>
-Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
-           Stefano Karapetsas <stefano@karapetsas.com>,
-           Mike Gabriel <sunweaver@debian.org>,
-           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Kylin Team <ukui@kylinos.cn>
+Uploaders: penghuan <penghuan@kylinos.cn>,
 Build-Depends: debhelper (>= 10.3~),
                dh-python,
                python3,
@@ -17,9 +15,7 @@ Build-Depends: debhelper (>= 10.3~),
                mate-common (>= 1.18),
                python3-all-dev,
 Standards-Version: 4.1.1
-Homepage: http://www.ukui-desktop.org/
-Vcs-Browser: https://anonscm.debian.org/git/pkg-ukui/ukui-menus.git
-Vcs-Git: https://anonscm.debian.org/git/pkg-ukui/ukui-menus.git
+Homepage: http://www.ukui.org/
 X-Python-Version: >= 3.6
 
 Package: ukui-menus
