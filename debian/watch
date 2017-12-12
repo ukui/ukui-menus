@@ -1,3 +1,0 @@
-version=3
-http://git.ukui-desktop.org/ukui-menus/ \
-    snapshot/ukui-menus-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz
