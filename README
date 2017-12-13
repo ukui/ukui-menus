@@ -10,11 +10,7 @@ from freedesktop.org:
   http://freedesktop.org/wiki/Specifications/menu-spec
   http://specifications.freedesktop.org/menu-spec/menu-spec-latest.html
 
-You may download updates to the package from:
-
-   http://pub.ukui-desktop.org/
-
-ukui-menus is a fork of gnome-menus.
+ukui-menus is a fork of mate-menus.
 
 Installation
 ============
@@ -28,6 +24,6 @@ How to report bugs
 
 Bugs should be reported to the UKUI bug tracking system:
 
-   https://github.com/ukui-desktop/ukui-menus/issues
+   https://github.com/ukui/ukui-menus/issues
 
 You will need to create an account for yourself.
