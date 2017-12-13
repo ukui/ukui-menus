@@ -1882,21 +1882,17 @@ static struct PyModuleDef ukuimenumodule = {
 PyMODINIT_FUNC PyInit_ukuimenu(void)
 {
 	PyObject* mod;
-	printf("init aaaaaaaaaaaaaaaaaaaaaaaaaa\n");
 
 	mod = PyModule_Create(&ukuimenumodule);
-	printf("init bbbbbbbbbbbbbbbbbbbbbbbbbbbb\n");
 
 	#define REGISTER_TYPE(t, n) G_STMT_START \
 	{ \
 		PyType_Ready(&t); \
 		PyModule_AddObject(mod, n, (PyObject*)&t); \
 	} G_STMT_END
-	printf("init cccccccccccccccccccccccccccccc\n");
 
 	REGISTER_TYPE(PyUkuiMenuTree_Type,     "Tree");
 	REGISTER_TYPE(PyUkuiMenuTreeItem_Type, "Item");
-	printf("init dddddddddddddddddddddddddddddddddd\n");
 
 	#define REGISTER_ITEM_TYPE(t, n) G_STMT_START \
 	{ \
@@ -1910,7 +1906,6 @@ PyMODINIT_FUNC PyInit_ukuimenu(void)
 	REGISTER_ITEM_TYPE(PyUkuiMenuTreeSeparator_Type, "Separator");
 	REGISTER_ITEM_TYPE(PyUkuiMenuTreeHeader_Type,    "Header");
 	REGISTER_ITEM_TYPE(PyUkuiMenuTreeAlias_Type,     "Alias");
-	printf("init eeeeeeeeeeeeeeeeeeeeeeeeeee\n");
 
 	PyModule_AddIntConstant(mod, "TYPE_INVALID",   UKUIMENU_TREE_ITEM_INVALID);
 	PyModule_AddIntConstant(mod, "TYPE_DIRECTORY", UKUIMENU_TREE_ITEM_DIRECTORY);
@@ -1928,6 +1923,5 @@ PyMODINIT_FUNC PyInit_ukuimenu(void)
 	PyModule_AddIntConstant(mod, "SORT_NAME",         UKUIMENU_TREE_SORT_NAME);
 	PyModule_AddIntConstant(mod, "SORT_DISPLAY_NAME", UKUIMENU_TREE_SORT_DISPLAY_NAME);
 
-	printf("init fffffffffffffffffffffffffffffffff\n");
 	return mod;
 }
