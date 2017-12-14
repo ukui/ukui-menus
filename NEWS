@@ -1,33 +1,3 @@
-### ukui-menus 1.18.0
+### ukui-menus 1.0.0
 
-  * NEWS: use consistent, project wide, markdown-like formatting
-    to make generating release announcements easier
-  * Translations update
-
-### ukui-menus 1.16.0
-
-  * Translations update
-
-### ukui-menus 1.14.0
-
-  * Move ukui-preferences-categories.menu from ukui-control-center.
-    That file can be packaged separately in distros to let users
-    decide whether they want categories in preferences menu or not.
-  * Translations update
-  * Add Changelog generation
-
-### ukui-menus 1.12.0
-
-  * Use pkg-config to check for python (requires python 2.7)
-  * Some fixes and cleanups
-  * Translations update
-
-### ukui-menus 1.10.0
-
-  * Translations update
-  * Bugfixes
-
-### ukui-menus 1.8.0
-
-  * Add a possibility to enable old gnome-2 preferences menu style with
-    categories
+  * Init release.
