@@ -1,6 +1,6 @@
 AC_PREREQ(2.62)
 
-AC_INIT([ukui-menus], [1.0.0], [http://www.ukui.org])
+AC_INIT([ukui-menus], [1.1.0], [http://www.ukui.org])
 AC_CONFIG_SRCDIR(libmenu/ukuimenu-tree.h)
 
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz check-news])
@@ -9,7 +9,7 @@ AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_HEADERS(config.h)
 
 AM_MAINTAINER_MODE
-#UKUI_MAINTAINER_MODE_DEFINES
+MATE_MAINTAINER_MODE_DEFINES
 
 # Before making a release, the LT_VERSION string should be modified.
 # The string is of the form C:R:A.
@@ -39,7 +39,7 @@ PKG_CHECK_MODULES(GLIB, glib-2.0 >= 2.36.0 gio-2.0 >= 2.15.2)
 AC_SUBST(GLIB_CFLAGS)
 AC_SUBST(GLIB_LIBS)
 
-#UKUI_COMPILE_WARNINGS(yes)
+MATE_COMPILE_WARNINGS(yes)
 AC_ARG_ENABLE(deprecation_flags,
               [AC_HELP_STRING([--enable-deprecation-flags],
                               [use *_DISABLE_DEPRECATED flags @<:@default=no@:>@])],,
