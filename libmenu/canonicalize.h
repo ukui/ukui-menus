@@ -3,7 +3,6 @@
  * This file is part of the GNU C Library.
  *
  * Copyright (C) 2002 Red Hat, Inc. (trivial port to GLib)
- * Copyright (C) 2017,Tianjin KYLIN Information Technology Co., Ltd.
  *
  * The GNU C Library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
