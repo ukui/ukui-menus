@@ -24,6 +24,7 @@
 
 #include <string.h>
 #include <errno.h>
+#include <gio/gio.h>
 
 #include "menu-layout.h"
 #include "menu-monitor.h"
@@ -480,6 +481,14 @@ canonicalize_basename_with_config_dir (UkuiMenuTree   *tree,
                                        const char *config_dir)
 {
   char *path;
+  GSettings *settings = g_settings_new("org.ukui.ukui-menu");
+  if (!settings)
+	  return FALSE;
+  gboolean state = g_settings_get_boolean(settings, "show-category-menu");
+  g_object_unref (settings);
+
+  if (!state && strcmp(config_dir, g_get_user_config_dir()) == 0)
+	  return FALSE;
 
   path = g_build_filename (config_dir, "menus",  basename,  NULL);
 
@@ -2095,10 +2104,18 @@ resolve_default_directory_dirs (UkuiMenuTree      *tree,
   int                 i;
 
   system_data_dirs = g_get_system_data_dirs ();
+  GSettings *settings = g_settings_new("org.ukui.ukui-menu");
+  if (!settings)
+	  return;
+  gboolean state = g_settings_get_boolean(settings, "show-category-menu");
+  g_object_unref (settings);
 
-  before = add_directory_dir (tree,
-			      menu_layout_node_ref (layout),
-			      g_get_user_data_dir ());
+  if (state)
+	before = add_directory_dir (tree,
+			      	    menu_layout_node_ref (layout),
+			      	    g_get_user_data_dir ());
+  else
+  	before = menu_layout_node_ref (layout);
 
   i = 0;
   while (system_data_dirs[i] != NULL)

@@ -34,7 +34,6 @@
         </Not>
       </And>
     </Include>
-    <MergeFile>ukui-preferences-categories.menu</MergeFile>
   </Menu>
 
   <!-- System Settings -->
