@@ -218,7 +218,14 @@ ukuimenu_tree_add_to_cache (UkuiMenuTree      *tree,
 
   menu_verbose ("Adding menu tree to cache: %s\n", cache_key);
 
-  g_hash_table_replace (ukuimenu_tree_cache, cache_key, tree);
+  GSettings *settings = g_settings_new("org.ukui.ukui-menu");
+  if (!settings)
+	  return FALSE;
+  gboolean state = g_settings_get_boolean(settings, "show-category-menu");
+  g_object_unref (settings);
+
+  if (state)
+	  g_hash_table_replace (ukuimenu_tree_cache, cache_key, tree);
 }
 
 static void
@@ -438,8 +445,15 @@ ukuimenu_tree_lookup_absolute (const char    *absolute,
 
   menu_verbose ("Looking up absolute path in tree cache: \"%s\"\n", absolute);
 
-  if ((tree = ukuimenu_tree_lookup_from_cache (absolute, flags)) != NULL)
-    return tree;
+  GSettings *settings = g_settings_new("org.ukui.ukui-menu");
+  if (!settings)
+	  return FALSE;
+  gboolean state = g_settings_get_boolean(settings, "show-category-menu");
+  g_object_unref (settings);
+
+  if (state)
+      if ((tree = ukuimenu_tree_lookup_from_cache (absolute, flags)) != NULL)
+          return tree;
 
   canonical = TRUE;
   canonical_path = freeme = menu_canonicalize_file_name (absolute, FALSE);
@@ -451,8 +465,9 @@ ukuimenu_tree_lookup_absolute (const char    *absolute,
       canonical_path = absolute;
     }
 
-  if ((tree = ukuimenu_tree_lookup_from_cache (canonical_path, flags)) != NULL)
-    return tree;
+  if (state)
+      if ((tree = ukuimenu_tree_lookup_from_cache (canonical_path, flags)) != NULL)
+          return tree;
 
   tree = ukuimenu_tree_new (UKUIMENU_TREE_ABSOLUTE, canonical_path, canonical, flags);
 
@@ -469,8 +484,15 @@ ukuimenu_tree_lookup_basename (const char    *basename,
 
   menu_verbose ("Looking up menu file in tree cache: \"%s\"\n", basename);
 
-  if ((tree = ukuimenu_tree_lookup_from_cache (basename, flags)) != NULL)
-    return tree;
+  GSettings *settings = g_settings_new("org.ukui.ukui-menu");
+  if (!settings)
+	  return FALSE;
+  gboolean state = g_settings_get_boolean(settings, "show-category-menu");
+  g_object_unref (settings);
+
+  if (state)
+      if ((tree = ukuimenu_tree_lookup_from_cache (basename, flags)) != NULL)
+          return tree;
 
   return ukuimenu_tree_new (UKUIMENU_TREE_BASENAME, basename, FALSE, flags);
 }
@@ -2059,9 +2081,18 @@ resolve_default_app_dirs (UkuiMenuTree      *tree,
 
   system_data_dirs = g_get_system_data_dirs ();
 
-  before = add_app_dir (tree,
-			menu_layout_node_ref (layout),
-			g_get_user_data_dir ());
+  GSettings *settings = g_settings_new("org.ukui.ukui-menu");
+  if (!settings)
+	  return;
+  gboolean state = g_settings_get_boolean(settings, "show-category-menu");
+  g_object_unref (settings);
+
+  if (state)
+      before = add_app_dir (tree,
+			    menu_layout_node_ref (layout),
+			    g_get_user_data_dir ());
+  else
+      before = menu_layout_node_ref (layout);
 
   i = 0;
   while (system_data_dirs[i] != NULL)
@@ -2113,7 +2144,7 @@ resolve_default_directory_dirs (UkuiMenuTree      *tree,
   if (state)
 	before = add_directory_dir (tree,
 			      	    menu_layout_node_ref (layout),
-			      	    g_get_user_data_dir ());
+				    g_get_user_data_dir ());
   else
   	before = menu_layout_node_ref (layout);
 
@@ -2167,11 +2198,18 @@ resolve_default_merge_dirs (UkuiMenuTree      *tree,
                                       layout);
     }
 
-  load_merge_dir_with_config_dir (tree,
-				  loaded_menu_files,
-                                  g_get_user_config_dir (),
-                                  merge_name,
-                                  layout);
+  GSettings *settings = g_settings_new("org.ukui.ukui-menu");
+  if (!settings)
+	  return FALSE;
+  gboolean state = g_settings_get_boolean(settings, "show-category-menu");
+  g_object_unref (settings);
+
+  if (state)
+      load_merge_dir_with_config_dir (tree,
+				      loaded_menu_files,
+                                      g_get_user_config_dir (),
+                                      merge_name,
+                                      layout);
 
   g_free (merge_name);
 
@@ -2404,10 +2442,19 @@ resolve_kde_legacy_dirs (UkuiMenuTree      *tree,
 
   system_data_dirs = g_get_system_data_dirs ();
 
-  before = add_legacy_dir (tree,
-			   loaded_menu_files,
-			   menu_layout_node_ref (layout),
-			   g_get_user_data_dir ());
+  GSettings *settings = g_settings_new("org.ukui.ukui-menu");
+  if (!settings)
+	  return;
+  gboolean state = g_settings_get_boolean(settings, "show-category-menu");
+  g_object_unref (settings);
+
+  if (state)
+      before = add_legacy_dir (tree,
+			       loaded_menu_files,
+			       menu_layout_node_ref (layout),
+			       g_get_user_data_dir ());
+  else
+      before = menu_layout_node_ref (layout);
 
   i = 0;
   while (system_data_dirs[i] != NULL)
