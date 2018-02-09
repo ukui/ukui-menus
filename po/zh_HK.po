@@ -166,3 +166,11 @@ msgstr "其他"
 #: ../desktop-directories/ukui-other.directory.in.h:2
 msgid "Applications that did not fit in other categories"
 msgstr "不符合其它分類的軟件"
+
+#: ../desktop-directories/ukui-android.directory.in.h:1
+msgid "Android"
+msgstr ""
+
+#: ../desktop-directories/ukui-android.directory.in.h:2
+msgid "Android compatible application"
+msgstr ""

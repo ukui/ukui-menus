@@ -22,6 +22,7 @@ directory_in_files = \
 	ukui-utility.directory.in \
 	ukui-utility-accessibility.directory.in \
 	ukui-other.directory.in \
+	ukui-android.directory.in \
 	ukui-menu-applications.directory.in \
 	ukui-menu-system.directory.in \
 	$(directory_in_controlcenterfiles)

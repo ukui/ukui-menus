@@ -169,3 +169,11 @@ msgstr "অন্যান্য"
 #: ../desktop-directories/ukui-other.directory.in.h:2
 msgid "Applications that did not fit in other categories"
 msgstr "অন্যান্য শ্রেণীর মধ্যে অন্তর্গত না করা অ্যাপ্লিকেশন"
+
+#: ../desktop-directories/ukui-android.directory.in.h:1
+msgid "Android"
+msgstr ""
+
+#: ../desktop-directories/ukui-android.directory.in.h:2
+msgid "Android compatible application"
+msgstr ""

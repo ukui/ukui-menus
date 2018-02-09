@@ -169,3 +169,11 @@ msgstr "ଅନ୍ଯାନ୍ଯ"
 #: ../desktop-directories/ukui-other.directory.in.h:2
 msgid "Applications that did not fit in other categories"
 msgstr "ପ୍ରୟୋଗ ଯାହାକି ଅନ୍ଯ କୌଣସି ଶ୍ରେଣୀ ସହିତ ଖାପ ଖାଇଲା ନାହିଁ"
+
+#: ../desktop-directories/ukui-android.directory.in.h:1
+msgid "Android"
+msgstr ""
+
+#: ../desktop-directories/ukui-android.directory.in.h:2
+msgid "Android compatible application"
+msgstr ""

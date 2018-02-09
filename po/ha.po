@@ -166,3 +166,11 @@ msgstr "Waccan"
 #: ../desktop-directories/ukui-other.directory.in.h:2
 msgid "Applications that did not fit in other categories"
 msgstr "Shiryoyin Ayuka waɗanda basu dace cikin wasu jinsi ba"
+
+#: ../desktop-directories/ukui-android.directory.in.h:1
+msgid "Android"
+msgstr ""
+
+#: ../desktop-directories/ukui-android.directory.in.h:2
+msgid "Android compatible application"
+msgstr ""

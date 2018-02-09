@@ -148,6 +148,18 @@
         <Not><Category>Core</Category></Not>
         <Not><Category>Settings</Category></Not>
         <Not><Category>Screensaver</Category></Not>
+        <Not><Category>Android</Category></Not>
+      </And>
+    </Include>
+  </Menu> <!-- End Other -->
+
+  <!-- Android -->
+  <Menu>
+    <Name>Android</Name>
+    <Directory>ukui-android.directory</Directory>
+    <Include>
+      <And>
+        <Category>Android</Category>
       </And>
     </Include>
   </Menu> <!-- End Other -->

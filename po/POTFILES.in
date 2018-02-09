@@ -20,3 +20,4 @@ desktop-directories/ukui-utility.directory.in
 desktop-directories/ukui-menu-applications.directory.in
 desktop-directories/ukui-menu-system.directory.in
 desktop-directories/ukui-other.directory.in
+desktop-directories/ukui-android.directory.in
