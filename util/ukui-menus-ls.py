@@ -5,6 +5,7 @@
 # Copyright (C) 2017,Tianjin KYLIN Information Technology Co., Ltd.
 #
 # Authors: Vincent Untz <vuntz@gnome.org>
+# Modified by: penghuan <penghuan@kylinos.cn>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
