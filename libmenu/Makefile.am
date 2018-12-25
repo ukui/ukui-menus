@@ -13,7 +13,6 @@ libukui_menu_include_HEADERS = \
 	ukuimenu-tree.h
 
 libukui_menu_sources = \
-	canonicalize.c \
 	desktop-entries.c \
 	entry-directories.c \
 	ukuimenu-tree.c \
@@ -23,7 +22,6 @@ libukui_menu_sources = \
 
 libukui_menu_la_SOURCES = \
 	$(libukui_menu_sources) \
-	canonicalize.h \
 	desktop-entries.h \
 	entry-directories.h \
 	ukuimenu-tree.h \
