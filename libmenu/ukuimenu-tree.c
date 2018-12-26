@@ -456,7 +456,7 @@ ukuimenu_tree_lookup_absolute (const char    *absolute,
           return tree;
 
   canonical = TRUE;
-  canonical_path = freeme = menu_canonicalize_file_name (absolute, FALSE);
+  canonical_path = freeme = realpath (absolute, NULL);
   if (canonical_path == NULL)
     {
       menu_verbose ("Failed to canonicalize absolute menu path \"%s\": %s\n",
@@ -589,7 +589,7 @@ static gboolean ukuimenu_tree_canonicalize_path(UkuiMenuTree* tree)
 	}
 	else /* if (tree->type == UKUIMENU_TREE_ABSOLUTE) */
 	{
-		tree->canonical_path = menu_canonicalize_file_name(tree->absolute_path, FALSE);
+		tree->canonical_path = realpath(tree->absolute_path, NULL);
 
 		if (tree->canonical_path != NULL)
 		{
