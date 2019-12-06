@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Kylin Team <team+kylin@tracker.debian.org>
 Uploaders: Aron Xu <aron@debian.org>,
            handsome_feng <jianfengli@ubuntukylin.com>
-Build-Depends: debhelper (>= 11),
+Build-Depends: debhelper-compat (= 12),
                dh-python,
                python3,
                gobject-introspection,
@@ -13,7 +13,8 @@ Build-Depends: debhelper (>= 11),
                libglib2.0-dev,
                mate-common (>= 1.18),
                python3-dev,
-Standards-Version: 4.2.1
+Standards-Version: 4.4.1
+Rules-Requires-Root: no
 Homepage: http://www.ukui.org
 Vcs-Git: https://salsa.debian.org/kylin-team/ukui-menus.git
 Vcs-Browser: https://salsa.debian.org/kylin-team/ukui-menus

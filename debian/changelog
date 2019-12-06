@@ -1,3 +1,22 @@
+ukui-menus (1.1.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/{compat,control}:
+    - Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/rules:
+    - Add --max-parallel=1 to DHFLAGS, build-parallelization can cause
+      localization errors.
+  * debian/control:
+    - Bump Standards-Version to 4.4.1.
+    - Add Rules-Requires-Root: field and set to no.
+  * debian/libukui-menu2.symbol:
+    - Add Build-Depends-Pakcage: meta data field.
+  * debian/copyright:
+    - Remove mismatched entries.
+    - Rmove COPYING and COPYING.LIB.
+
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Fri, 06 Dec 2019 16:36:47 +0800
+
 ukui-menus (1.1.3-2) unstable; urgency=medium
 
   * debian/control:

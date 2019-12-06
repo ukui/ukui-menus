@@ -1,4 +1,5 @@
 libukui-menu.so.2 libukui-menu2 #MINVER#
+* Build-Depends-Package: libukui-menu-dev
  ukuimenu_tree_add_monitor@Base 1.0.0
  ukuimenu_tree_alias_get_directory@Base 1.0.0
  ukuimenu_tree_alias_get_item@Base 1.0.0
