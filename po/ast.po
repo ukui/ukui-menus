@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2007
 # Ḷḷumex03 <tornes@opmbx.org>, 2014
@@ -10,14 +10,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UKUI Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-01 16:24+0300\n"
+"POT-Creation-Date: 2019-12-14 13:44+0800\n"
 "PO-Revision-Date: 2014-06-13 10:43+0000\n"
 "Last-Translator: Ḷḷumex03 <tornes@opmbx.org>\n"
 "Language-Team: Asturian (http://www.transifex.com/ukui/UKUI/language/ast/)\n"
+"Language: ast\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ast\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../desktop-directories/ukui-audio-video.directory.in.h:1
@@ -111,7 +111,8 @@ msgstr "Alministración"
 
 #: ../desktop-directories/ukui-settings-system.directory.in.h:2
 msgid "Change system-wide settings (affects all users)"
-msgstr "Fai cambeos nes preferencies globales del sistema (afeuta a tolos usuarios)"
+msgstr ""
+"Fai cambeos nes preferencies globales del sistema (afeuta a tolos usuarios)"
 
 #: ../desktop-directories/ukui-settings.directory.in.h:1
 msgid "Preferences"

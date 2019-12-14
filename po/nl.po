@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Daniel van Eeden <daniel_e@dds.nl>, 2004
 # Michael Steenbeek <m.o.steenbeek@gmail.com>, 2012
@@ -10,14 +10,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UKUI Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-01 16:24+0300\n"
+"POT-Creation-Date: 2019-12-14 13:44+0800\n"
 "PO-Revision-Date: 2015-11-10 18:26+0000\n"
 "Last-Translator: Michael Steenbeek <m.o.steenbeek@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/ukui/UKUI/language/nl/)\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../desktop-directories/ukui-audio-video.directory.in.h:1
@@ -168,7 +168,8 @@ msgstr "Overig"
 
 #: ../desktop-directories/ukui-other.directory.in.h:2
 msgid "Applications that did not fit in other categories"
-msgstr "Toepassingen die niet in een andere categorie ondergebracht kunnen worden"
+msgstr ""
+"Toepassingen die niet in een andere categorie ondergebracht kunnen worden"
 
 #: ../desktop-directories/ukui-android.directory.in.h:1
 msgid "Android"

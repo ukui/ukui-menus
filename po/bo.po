@@ -1,173 +1,170 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Tibetan translations for ukui-menus package.
+# Copyright (C) 2019 THE ukui-menus'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ukui-menus package.
+# feng <jianfengli@ubuntukylin.com>, 2019.
 #
-# Translators:
-# Francesco Marletta <francesco.marletta @ tiscali.it>, 2005, 206, 2007, 2008, 2009
-# Luca Ferretti <elle.uca@libero.it>, 2009
 msgid ""
 msgstr ""
-"Project-Id-Version: UKUI Desktop Environment\n"
+"Project-Id-Version: ukui-menus 1.1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-14 13:44+0800\n"
-"PO-Revision-Date: 2015-12-26 00:32+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Italian (http://www.transifex.com/ukui/UKUI/language/it/)\n"
-"Language: it\n"
+"PO-Revision-Date: 2019-12-14 13:44+0800\n"
+"Last-Translator: feng <jianfengli@ubuntukylin.com>\n"
+"Language-Team: Tibetan\n"
+"Language: bo\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=ASCII\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../desktop-directories/ukui-audio-video.directory.in.h:1
 msgid "Sound & Video"
-msgstr "Audio e video"
+msgstr ""
 
 #: ../desktop-directories/ukui-audio-video.directory.in.h:2
 msgid "Multimedia menu"
-msgstr "Menù multimedia"
+msgstr ""
 
 #: ../desktop-directories/ukui-development.directory.in.h:1
 msgid "Programming"
-msgstr "Programmazione"
+msgstr ""
 
 #: ../desktop-directories/ukui-development.directory.in.h:2
 msgid "Tools for software development"
-msgstr "Strumenti per lo sviluppo software"
+msgstr ""
 
 #: ../desktop-directories/ukui-education.directory.in.h:1
 msgid "Education"
-msgstr "Istruzione"
+msgstr ""
 
 #: ../desktop-directories/ukui-game.directory.in.h:1
 msgid "Games"
-msgstr "Giochi"
+msgstr ""
 
 #: ../desktop-directories/ukui-game.directory.in.h:2
 msgid "Games and amusements"
-msgstr "Giochi e passatempi"
+msgstr ""
 
 #: ../desktop-directories/ukui-graphics.directory.in.h:1
 msgid "Graphics"
-msgstr "Grafica"
+msgstr ""
 
 #: ../desktop-directories/ukui-graphics.directory.in.h:2
 msgid "Graphics applications"
-msgstr "Applicazioni grafiche"
+msgstr ""
 
 #: ../desktop-directories/ukui-hardware.directory.in.h:1
 msgid "Hardware"
-msgstr "Hardware"
+msgstr ""
 
 #: ../desktop-directories/ukui-hardware.directory.in.h:2
 msgid "Settings for several hardware devices"
-msgstr "Impostazioni per parecchi dispositivi hardware"
+msgstr ""
 
 #: ../desktop-directories/ukui-internet-and-network.directory.in.h:1
 msgid "Internet and Network"
-msgstr "Internet e rete"
+msgstr ""
 
 #: ../desktop-directories/ukui-internet-and-network.directory.in.h:2
 msgid "Network-related settings"
-msgstr "Impostazioni relative alla rete"
+msgstr ""
 
 #: ../desktop-directories/ukui-look-and-feel.directory.in.h:1
 msgid "Look and Feel"
-msgstr "Aspetto e stile"
+msgstr ""
 
 #: ../desktop-directories/ukui-look-and-feel.directory.in.h:2
 msgid "Settings controlling the desktop appearance and behavior"
-msgstr "Impostazioni che controllano l'aspetto e il comportamento del desktop"
+msgstr ""
 
 #: ../desktop-directories/ukui-network.directory.in.h:1
 msgid "Internet"
-msgstr "Internet"
+msgstr ""
 
 #: ../desktop-directories/ukui-network.directory.in.h:2
 msgid "Programs for Internet access such as web and email"
-msgstr "Programmi per l'accesso a Internet come web ed email"
+msgstr ""
 
 #: ../desktop-directories/ukui-office.directory.in.h:1
 msgid "Office"
-msgstr "Ufficio"
+msgstr ""
 
 #: ../desktop-directories/ukui-office.directory.in.h:2
 msgid "Office Applications"
-msgstr "Applicazioni da ufficio"
+msgstr ""
 
 #. Translators: this is Personal as in "Personal settings"
 #: ../desktop-directories/ukui-personal.directory.in.h:2
 msgid "Personal"
-msgstr "Personale"
+msgstr ""
 
 #: ../desktop-directories/ukui-personal.directory.in.h:3
 msgid "Personal settings"
-msgstr "Impostazioni personali"
+msgstr ""
 
 #: ../desktop-directories/ukui-settings-system.directory.in.h:1
 msgid "Administration"
-msgstr "Amministrazione"
+msgstr ""
 
 #: ../desktop-directories/ukui-settings-system.directory.in.h:2
 msgid "Change system-wide settings (affects all users)"
-msgstr "Modifica impostazioni di sistema (influenzano tutti gli utenti)"
+msgstr ""
 
 #: ../desktop-directories/ukui-settings.directory.in.h:1
 msgid "Preferences"
-msgstr "Preferenze"
+msgstr ""
 
 #: ../desktop-directories/ukui-settings.directory.in.h:2
 msgid "Personal preferences"
-msgstr "Preferenze personali"
+msgstr ""
 
 #: ../desktop-directories/ukui-system.directory.in.h:1
 #: ../desktop-directories/ukui-menu-system.directory.in.h:1
 msgid "System"
-msgstr "Sistema"
+msgstr ""
 
 #: ../desktop-directories/ukui-system.directory.in.h:2
 msgid "System settings"
-msgstr "Impostazioni di sistema"
+msgstr ""
 
 #: ../desktop-directories/ukui-system-tools.directory.in.h:1
 msgid "System Tools"
-msgstr "Strumenti di sistema"
+msgstr ""
 
 #: ../desktop-directories/ukui-system-tools.directory.in.h:2
 msgid "System configuration and monitoring"
-msgstr "Configurazione e monitoraggio del sistema"
+msgstr ""
 
 #: ../desktop-directories/ukui-utility-accessibility.directory.in.h:1
 msgid "Universal Access"
-msgstr "Accesso universale"
+msgstr ""
 
 #: ../desktop-directories/ukui-utility-accessibility.directory.in.h:2
 msgid "Universal Access Settings"
-msgstr "Impostazioni accesso universale"
+msgstr ""
 
 #: ../desktop-directories/ukui-utility.directory.in.h:1
 msgid "Accessories"
-msgstr "Accessori"
+msgstr ""
 
 #: ../desktop-directories/ukui-utility.directory.in.h:2
 msgid "Desktop accessories"
-msgstr "Accessori del desktop"
+msgstr ""
 
 #: ../desktop-directories/ukui-menu-applications.directory.in.h:1
 msgid "Applications"
-msgstr "Applicazioni"
+msgstr ""
 
 #: ../desktop-directories/ukui-menu-system.directory.in.h:2
 msgid "Personal preferences and administration settings"
-msgstr "Preferenze personali e impostazioni di amministrazione"
+msgstr ""
 
 #: ../desktop-directories/ukui-other.directory.in.h:1
 msgid "Other"
-msgstr "Altro"
+msgstr ""
 
 #: ../desktop-directories/ukui-other.directory.in.h:2
 msgid "Applications that did not fit in other categories"
-msgstr "Applicazioni che non rientrano in altre categorie"
+msgstr ""
 
 #: ../desktop-directories/ukui-android.directory.in.h:1
 msgid "Android"
